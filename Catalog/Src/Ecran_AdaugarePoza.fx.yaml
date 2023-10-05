@@ -2,7 +2,8 @@ Ecran_AdaugarePoza As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Items: ='Documente INDICATORI'
+        Height: =708
+        Items: =Filter('Documente INDICATORI',Len(Nume)<10)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -12,6 +13,7 @@ Ecran_AdaugarePoza As screen:
 
         Image3 As image:
             Height: =72
+            Image: =ThisItem.Thumbnail.Large
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -45,7 +47,7 @@ Ecran_AdaugarePoza As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Cale folder'
+            Text: =ThisItem.Nume
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1.Width
             X: =Title1.X
