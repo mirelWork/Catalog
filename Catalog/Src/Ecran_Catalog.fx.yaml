@@ -57,7 +57,7 @@ Ecran_Catalog As screen:
         Subtitle2 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =43
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -66,8 +66,7 @@ Ecran_Catalog As screen:
             Size: =16
             Text: =ThisItem.EnglishName
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title2.Width
-            X: =88
+            Width: =640
             Y: =402
             ZIndex: =3
 
@@ -92,8 +91,8 @@ Ecran_Catalog As screen:
             Icon: =Icon.Copy
             OnSelect: =Copy(ThisItem.Code)
             Width: =27
-            X: =486
-            Y: =349
+            X: =490
+            Y: =354
             ZIndex: =7
 
         Icon2 As icon.Add:
@@ -108,19 +107,13 @@ Ecran_Catalog As screen:
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
-            Height: =315
-            HtmlText: |-
-                ="<style type="&"text/css"&">
-                .centerImage
-                {
-                 margin-left:311;
-                 display:block;
-                }
-                </style>"&"<img class="&"centerImage"&" src="&First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large&" width=* height=250 />"
+            Height: =345
+            HtmlText: |
+                ="<center>
+                <img src="&First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large&" height=290 />"
             OnSelect: =Select(Parent)
-            Width: =308
-            X: =175
-            Y: =12
+            Width: =340
+            X: =150
             ZIndex: =9
 
     Label1 As label:
