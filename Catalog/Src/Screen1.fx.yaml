@@ -2,3 +2,11 @@ Screen1 As screen:
     BackgroundImage: =Picture1
     ImagePosition: =ImagePosition.Fill
 
+    Icon3 As icon.Search:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Search
+        OnSelect: =Navigate(Ecran_Catalog)
+        X: =320
+        Y: =440
+        ZIndex: =1
+
