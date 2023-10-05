@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{198CD0C1-4EDD-477C-AC1E-8E6B1F351E5F}": "{\"name\":\"{198CD0C1-4EDD-477C-AC1E-8E6B1F351E5F}\",\"title\":\"Table2\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"TipFiltrare\":{\"type\":\"string\",\"title\":\"TipFiltrare\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "Table2",
+  "TableName": "{198CD0C1-4EDD-477C-AC1E-8E6B1F351E5F}"
+}
