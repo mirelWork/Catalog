@@ -8,12 +8,12 @@ Ecran_AdaugarePoza As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
-        Y: =213
+        Y: =250
         ZIndex: =1
 
         Image3 As image:
             Height: =72
-            Image: =ThisItem.Thumbnail.Large
+            Image: =ThisItem.Thumbnail.Small
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
