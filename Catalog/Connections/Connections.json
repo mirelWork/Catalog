@@ -1,24 +1,4 @@
 {
-  "5cee5a6c-e2fc-467f-938e-9ee281593094": {
-    "appActions": [
-      "MyProfile"
-    ],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Utilizatori Office 365",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3414/office365users/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [
-      "UtilizatoriOffice365"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "5cee5a6c-e2fc-467f-938e-9ee281593094"
-  },
   "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read"
@@ -41,11 +21,19 @@
             "tableName": "{198CD0C1-4EDD-477C-AC1E-8E6B1F351E5F}"
           }
         }
+      },
+      "sites%252Fabeurope.sharepoint.com%252C11f1b836-3d68-451e-a100-5f3e963e8932%252C463542fe-c7fb-4c2f-9580-dcf4a9933112,b%2521NrjxEWg9HkWhAF8-lj6JMv5CNUb7xy9MlYDc9KmTMRLBVgLP-cWNT6R3YnXqs8gs,01BJIXO22H4EW5HCFSWFA24Q3L572HHE7X": {
+        "dataSources": {
+          "Catalog": {
+            "tableName": "{C271EFFC-5C0E-4638-918F-86E470AD60E2}"
+          }
+        }
       }
     },
     "dataSources": [
       "Table1",
-      "Table2"
+      "Table2",
+      "Catalog"
     ],
     "dependencies": {},
     "dependents": [],

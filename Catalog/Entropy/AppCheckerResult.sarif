@@ -43,48 +43,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2"
+                  "fullyQualifiedName": "Ecran_Catalog.Drop_Categorie.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen2",
-                "type": "Screen2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.Categorie.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.Categorie.AccessibleLabel",
+                  "fullyQualifiedName": "Ecran_Catalog.Drop_Categorie.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Categorie"
+                "module": "Ecran_Catalog",
+                "type": "Ecran_Catalog.Drop_Categorie"
               }
             }
           ],
@@ -102,19 +73,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.Brand.AccessibleLabel"
+                  "fullyQualifiedName": "Ecran_Catalog.Drop_Brand.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.Brand.AccessibleLabel",
+                  "fullyQualifiedName": "Ecran_Catalog.Drop_Brand.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.Brand"
+                "module": "Ecran_Catalog",
+                "type": "Ecran_Catalog.Drop_Brand"
               }
             }
           ],
@@ -132,19 +103,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.ListaMateriale.AccessibleLabel"
+                  "fullyQualifiedName": "Ecran_Catalog.ListaMateriale.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.ListaMateriale.AccessibleLabel",
+                  "fullyQualifiedName": "Ecran_Catalog.ListaMateriale.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ListaMateriale"
+                "module": "Ecran_Catalog",
+                "type": "Ecran_Catalog.ListaMateriale"
               }
             }
           ],
@@ -162,19 +133,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.ListaMateriale.TabIndex"
+                  "fullyQualifiedName": "Ecran_Catalog.ListaMateriale.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.ListaMateriale.TabIndex",
+                  "fullyQualifiedName": "Ecran_Catalog.ListaMateriale.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.ListaMateriale"
+                "module": "Ecran_Catalog",
+                "type": "Ecran_Catalog.ListaMateriale"
               }
             }
           ],
@@ -186,36 +157,6 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ListBox2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ListBox2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ListBox2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
         },
         {
           "locations": [

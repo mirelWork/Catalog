@@ -1,4 +1,4 @@
-Screen2 As screen:
+Ecran_Catalog As screen:
     OnVisible: =
 
     Drop_Categorie As dropdown:
@@ -6,7 +6,7 @@ Screen2 As screen:
         Items: =Sort(Distinct(catalogList,ThisRecord.'Material Category'),Value,SortOrder.Ascending)
         OnChange: |-
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And 
-            Set(varLista, Filter(catalogList, If(IsBlank('Material Category'),true,'Material Category'= varCategorie),If(IsBlank(FinalBrand),true,FinalBrand=varBrand)))
+            Set(varLista, Filter(catalogList, If(IsBlank(varCategorie),true,'Material Category'= varCategorie),If(IsBlank(varBrand),true,FinalBrand=varBrand),Not(IsBlank(FinalBrand))))
         OnSelect: =
         Size: =21
         Width: =284
@@ -19,7 +19,7 @@ Screen2 As screen:
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
         OnChange: |-
             =Set(varBrand,Drop_Brand.SelectedText.Value) And 
-            Set(varLista, Filter(catalogList, If(IsBlank('Material Category'),true,'Material Category'= varCategorie),If(IsBlank(FinalBrand),true,FinalBrand=varBrand)))
+            Set(varLista, Filter(catalogList, If(IsBlank(varCategorie),true,'Material Category'= varCategorie),If(IsBlank(varBrand),true,FinalBrand=varBrand),Not(IsBlank(FinalBrand))))
         Size: =21
         Width: =277
         X: =338
@@ -100,9 +100,27 @@ Screen2 As screen:
             Width: =4
             ZIndex: =6
 
+        Icon1 As icon.Copy:
+            Height: =34
+            Icon: =Icon.Copy
+            OnSelect: =Select(Parent)
+            Width: =34
+            X: =581
+            Y: =368
+            ZIndex: =7
+
+        Icon2 As icon.Add:
+            Height: =34
+            Icon: =Icon.Add
+            OnSelect: =Select(Parent)
+            Width: =49
+            X: =532
+            Y: =150
+            ZIndex: =8
+
     Label1 As label:
         Height: =60
-        OnSelect: =Set(catalogList,Filter(Catalog,Not(IsBlank(FinalBrand))))
+        OnSelect: =
         Size: =21
         Text: ="Categorie"
         Width: =284

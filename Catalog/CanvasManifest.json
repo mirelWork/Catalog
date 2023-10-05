@@ -133,6 +133,7 @@
   },
   "ScreenOrder": [
     "Screen1",
-    "Screen2"
+    "Ecran_Catalog",
+    "Ecran_AdaugarePoza"
   ]
 }
