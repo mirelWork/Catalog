@@ -1,6 +1,8 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(catalogList,Catalog)
+    OnStart: |-
+        =Set(catalogList,Catalog) And
+        Set(fileList,'Documente INDICATORI')
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

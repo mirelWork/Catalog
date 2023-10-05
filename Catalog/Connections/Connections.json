@@ -1,4 +1,26 @@
 {
+  "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3414/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://abeurope.sharepoint.com/sites/rodepartments/SD/Development": {
+        "dataSources": {
+          "Documente INDICATORI": {
+            "tableName": "cf0256c1-c5f9-4f8d-a477-6275eab3c82c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documente INDICATORI"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+  },
   "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read"
