@@ -29,7 +29,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2023 19:10:56",
+  "HeaderLastSavedDateTimeUTC": "10/05/2023 19:11:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0f84ed25-278c-4720-952d-7b5557a5d6ef": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9ad7636121d249f5b345a17d2c634dd3\"",
@@ -95,7 +95,7 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 25,
+    "Button1": 17,
     "Drop_Brand": 4,
     "Drop_Categorie": 3,
     "Drop_Categorie_1": 6,
@@ -110,7 +110,7 @@
     "Label1": 1,
     "Label1_1": 2,
     "ListaMateriale": 8,
-    "PozeMarita": 24,
+    "PozeMarita": 16,
     "Rectangle2": 10,
     "Rectangle3": 7,
     "Screen1": 3,
