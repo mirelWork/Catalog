@@ -129,7 +129,7 @@
     "PublishDataLocally": false,
     "PublishResourcesLocally": false,
     "PublishTarget": "player",
-    "UserLocale": "ro-RO"
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "Screen1",

@@ -3,30 +3,30 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Brand": 18,
-    "Categorie": 17,
-    "galleryTemplate2": 21,
+    "Brand": 8,
+    "Categorie": 7,
+    "galleryTemplate2": 11,
     "Host": 3,
-    "Image2": 23,
-    "Label1": 15,
-    "Label1_1": 16,
-    "ListaMateriale": 20,
-    "ListBox2": 27,
-    "Rectangle2": 22,
-    "Rectangle3": 19,
-    "Screen1": 4,
-    "Screen2": 14,
-    "Separator2": 26,
-    "Subtitle2": 25,
-    "Title2": 24
+    "Image2": 13,
+    "Label1": 5,
+    "Label1_1": 6,
+    "ListaMateriale": 10,
+    "ListBox2": 17,
+    "Rectangle2": 12,
+    "Rectangle3": 9,
+    "Screen1": 18,
+    "Screen2": 4,
+    "Separator2": 16,
+    "Subtitle2": 15,
+    "Title2": 14
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2023 09:38:05",
+  "HeaderLastSavedDateTimeUTC": "10/05/2023 09:39:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "5cee5a6c-e2fc-467f-938e-9ee281593094": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5119790fdd1d47c4a7acb3f757c88389\"",
-    "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\""
+    "5cee5a6c-e2fc-467f-938e-9ee281593094": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/750f571d3c6b4b47bd6727dce9907077\"",
+    "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/93b42b3eae6e497abad0f29e6da5219e\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -100,19 +100,18 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.2020776,
+    "AnalysisLoadTime": 0.127656,
     "ControlCount": {
       "dropdown": 2,
-      "gallery": 2,
-      "galleryTemplate": 2,
-      "icon": 1,
-      "image": 2,
-      "label": 7,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "image": 1,
+      "label": 4,
       "listbox": 1,
-      "rectangle": 5,
+      "rectangle": 3,
       "screen": 2
     },
-    "DeserializationLoadTime": 0.9482486
+    "DeserializationLoadTime": 1.0197701
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
