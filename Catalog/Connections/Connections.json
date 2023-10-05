@@ -32,16 +32,20 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "sites%252Fabeurope.sharepoint.com%252C11f1b836-3d68-451e-a100-5f3e963e8932%252C463542fe-c7fb-4c2f-9580-dcf4a9933112,b%2521NrjxEWg9HkWhAF8-lj6JMv5CNUb7xy9MlYDc9KmTMRLBVgLP-cWNT6R3YnXqs8gs,01BJIXO22H4EW5HCFSWFA24Q3L572HHE7X": {
+      "me,b%2521n1eHwNdoKEO1hIXZM_RRUNkblTg_Ui1GoYsfyVrt6GtAqGHmcYAORp2dZ9Ocw05I,01CPRWED3Q5UC6ZNQEV5HYEM5NGX23ICWX": {
         "dataSources": {
-          "Catalog": {
-            "tableName": "{C271EFFC-5C0E-4638-918F-86E470AD60E2}"
+          "Table1": {
+            "tableName": "{1B209433-F4C3-405F-A49C-6449DF501957}"
+          },
+          "Table2": {
+            "tableName": "{198CD0C1-4EDD-477C-AC1E-8E6B1F351E5F}"
           }
         }
       }
     },
     "dataSources": [
-      "Catalog"
+      "Table1",
+      "Table2"
     ],
     "dependencies": {},
     "dependents": [],

@@ -1,117 +1,26 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Drop_Brand": 9,
-    "Drop_Categorie": 8,
-    "galleryTemplate2": 12,
-    "Host": 3,
-    "Image2": 14,
-    "Label1": 6,
-    "Label1_1": 7,
-    "ListaMateriale": 11,
-    "Rectangle2": 13,
-    "Rectangle3": 10,
-    "Screen1": 4,
-    "Screen2": 5,
-    "Separator2": 17,
-    "Subtitle2": 16,
-    "Title2": 15
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2023 12:35:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "5cee5a6c-e2fc-467f-938e-9ee281593094": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5119790fdd1d47c4a7acb3f757c88389\"",
-    "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "Picture1": "0001.jpg"
-  },
-  "LocalResourceRootPaths": {
-    "Picture1": "https://docserverpwaprodneu.blob.core.windows.net/22f2243b-f0a9-4baa-be52-0905a0c189bc-1/resource/Assets0Images00001.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-05T09%3A42%3A42Z&ske=2023-10-06T09%3A57%3A42Z&sks=b&skv=2021-08-06&sv=2021-08-06&spr=https&se=2023-10-06T09%3A57%3A42Z&sr=b&sp=r&sig=2d1vCX8zvGQCdpG8FwEE8Z1m9cPIRsQC79vRONq2FjM%3D"
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "Catalog": 5,
-    "ComboBoxSample": 1,
-    "CustomGallerySample": 2,
-    "DropDownSample": 3,
-    "ListboxSample": 4,
-    "UtilizatoriOffice365": 0
-  },
+  "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "dropdown": 1,
-    "gallery": 3,
-    "image": 4,
-    "label": 0,
-    "rectangle": 2
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "Drop_Brand": {},
-    "Drop_Categorie": {},
-    "galleryTemplate2": {},
-    "Host": {},
-    "Image2": {},
-    "Label1": {},
-    "Label1_1": {},
-    "ListaMateriale": {},
-    "Rectangle2": {},
-    "Rectangle3": {},
-    "Screen1": {},
-    "Screen2": {},
-    "Separator2": {},
-    "Subtitle2": {},
-    "Title2": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Drop_Brand": 8,
-    "Drop_Categorie": 7,
-    "galleryTemplate2": 12,
-    "Host": 0,
-    "Image2": 14,
-    "Label1": 5,
-    "Label1_1": 6,
-    "ListaMateriale": 10,
-    "Rectangle2": 13,
-    "Rectangle3": 9,
-    "Screen1": 3,
-    "Screen2": 4,
-    "Separator2": 17,
-    "Subtitle2": 16,
-    "Title2": 15
-  },
-  "ResourcesJsonIndices": {
-    "Image-Picture1": 2,
-    "Image-SampleImage": 0,
-    "Pdf-SamplePdf": 1
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.0464339,
-    "ControlCount": {
-      "dropdown": 2,
-      "gallery": 1,
-      "galleryTemplate": 1,
-      "image": 1,
-      "label": 4,
-      "listbox": 1,
-      "rectangle": 3,
-      "screen": 2
-    },
-    "DeserializationLoadTime": 0.8950983
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
