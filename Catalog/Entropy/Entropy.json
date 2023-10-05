@@ -22,15 +22,19 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2023 09:40:41",
+  "HeaderLastSavedDateTimeUTC": "10/05/2023 09:42:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "5cee5a6c-e2fc-467f-938e-9ee281593094": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/750f571d3c6b4b47bd6727dce9907077\"",
     "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/93b42b3eae6e497abad0f29e6da5219e\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "Picture1": "d202cb75-8b38-4a09-9564-1bfdcc7d2b6c.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "Picture1": "https://docserverpwaprodneu.blob.core.windows.net/18fd11f4-faa2-4442-b345-26c9fd493bb7-1/resource/7eaf2aff-f6aa-483c-b93d-98734efcc74e.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-05T09%3A41%3A50Z&ske=2023-10-06T09%3A56%3A50Z&sks=b&skv=2021-08-06&sv=2021-08-06&spr=https&se=2023-10-06T09%3A56%3A50Z&sr=b&sp=r&sig=fndMsC0Qj8mr8LyIuU3rXpQmyDhGk9jkfwb5QpUKXsI%3D"
+  },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
@@ -94,6 +98,7 @@
     "Title2": 9
   },
   "ResourcesJsonIndices": {
+    "Image-Picture1": 2,
     "Image-SampleImage": 0,
     "Pdf-SamplePdf": 1
   },
