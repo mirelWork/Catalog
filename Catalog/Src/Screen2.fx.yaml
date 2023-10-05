@@ -1,0 +1,19 @@
+"Screen2 As screen.'phoneLayout_Tutorial_ver3.0'":
+
+    PozeMarita As image:
+        Height: =524
+        Image: =marire
+        Width: =Parent.Width
+        Y: =290
+        ZIndex: =2
+
+    Button1 As button:
+        Height: =70
+        OnSelect: =Navigate(Ecran_Catalog)
+        Size: =24
+        Text: ="Go Back"
+        Width: =280
+        X: =180
+        Y: =914
+        ZIndex: =3
+

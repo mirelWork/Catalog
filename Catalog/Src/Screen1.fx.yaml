@@ -4,9 +4,11 @@ Screen1 As screen:
 
     Icon3 As icon.Search:
         Color: =RGBA(255, 255, 255, 1)
+        Height: =217
         Icon: =Icon.Search
         OnSelect: =Navigate(Ecran_Catalog)
-        X: =320
-        Y: =440
+        Width: =234
+        X: =45
+        Y: =125
         ZIndex: =1
 

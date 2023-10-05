@@ -50,8 +50,8 @@ Ecran_Catalog As screen:
             Text: =ThisItem.Code
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
-            X: =88
-            Y: =345
+            X: =86
+            Y: =377
             ZIndex: =2
 
         Subtitle2 As label:
@@ -67,7 +67,7 @@ Ecran_Catalog As screen:
             Text: =ThisItem.EnglishName
             VerticalAlign: =VerticalAlign.Top
             Width: =640
-            Y: =402
+            Y: =420
             ZIndex: =3
 
         Separator2 As rectangle:
@@ -86,15 +86,6 @@ Ecran_Catalog As screen:
             Width: =4
             ZIndex: =6
 
-        Icon1 As icon.Copy:
-            Height: =25
-            Icon: =Icon.Copy
-            OnSelect: =Copy(ThisItem.Code)
-            Width: =27
-            X: =490
-            Y: =354
-            ZIndex: =7
-
         Icon2 As icon.Add:
             Color: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),RGBA(0, 18, 107, 1),RGBA(255, 0, 0, 0.8))
             Height: =34
@@ -107,11 +98,11 @@ Ecran_Catalog As screen:
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
-            Height: =345
+            Height: =377
             HtmlText: |
                 ="<center>
                 <img src="&First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large&" height=290 />"
-            OnSelect: =Select(Parent)
+            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large) And Navigate(Screen2))
             Width: =340
             X: =150
             ZIndex: =9
