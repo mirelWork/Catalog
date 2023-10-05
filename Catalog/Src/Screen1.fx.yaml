@@ -1,2 +1,4 @@
 Screen1 As screen:
+    BackgroundImage: =Picture1
+    ImagePosition: =ImagePosition.Fill
 
