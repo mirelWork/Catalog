@@ -90,7 +90,7 @@ Ecran_Catalog As screen:
             Color: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),RGBA(0, 18, 107, 1),RGBA(255, 0, 0, 0.8))
             Height: =34
             Icon: =Icon.Add
-            OnSelect: =Set(varAdaugarePoza,First(Filter(fileList,Nume=ThisItem.Code)).Nume) And Navigate(Ecran_AdaugarePoza)
+            OnSelect: =Set(varAdaugarePoza,ThisItem.Code) And Navigate(Ecran_AdaugarePoza)
             Tooltip: ="Adauga o poza."
             Width: =49
             X: =532
