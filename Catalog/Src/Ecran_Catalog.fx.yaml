@@ -101,8 +101,8 @@ Ecran_Catalog As screen:
             Height: =377
             HtmlText: |
                 ="<center>
-                <img src="&First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large&" height=290 />"
-            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,First(Filter(fileList,Nume=ThisItem.Code)).Thumbnail.Large) And Navigate(Screen2))
+                <img src="&ThisItem.Photo&" height=290 />"
+            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,ThisItem.Photo) And Navigate(Screen2))
             Width: =340
             X: =150
             ZIndex: =9
