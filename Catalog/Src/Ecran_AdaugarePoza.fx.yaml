@@ -30,6 +30,6 @@ Ecran_AdaugarePoza As screen:
         Text: ="Incarca Poza"
         Width: =280
         X: =180
-        Y: =1050
+        Y: =1018
         ZIndex: =4
 
