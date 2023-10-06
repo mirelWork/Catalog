@@ -25,7 +25,7 @@ Ecran_AdaugarePoza As screen:
 
     Button2 As button:
         Height: =50
-        OnSelect: =Salvarepoza.Run(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),varAdaugarePoza,Blank(),UtilizatoriOffice365.MyProfile().MailNickname)
+        OnSelect: =Salvarepoza.Run(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),varAdaugarePoza,Blank(),UtilizatoriOffice365.MyProfileV2().mailNickname)
         Size: =24
         Text: ="Incarca Poza"
         Width: =280
