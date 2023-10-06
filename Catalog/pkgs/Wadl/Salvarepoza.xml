@@ -2,14 +2,12 @@
   <doc title="Salvare poza" />
   <grammars>
     <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <string name="ManualTriggerInput_Crea_Ux021B_ifi_Ux0219_ierul_Con_Ux021B_inutfi_Ux0219_ier_def" />
-      <string name="ManualTriggerInput_Crea_Ux021B_ifi_Ux0219_ierul_Numefi_Ux0219_ier_def" />
-      <string name="ManualTriggerInput_Crea_Ux021B_ifi_Ux0219_ierul_Numefi_Ux0219_ier_1_def" />
+      <string name="ManualTriggerInput_Createfile_FileName_def" />
+      <string name="ManualTriggerInput_Initializevariable_Value_def" />
       <string name="ManualTriggerInput_Addarowintoatable_User_def" />
       <object name="ManualTriggerInput">
-        <property name="Creațifișierul_Conținutfișier" type="string" />
-        <property name="Creațifișierul_Numefișier" type="string" />
-        <property name="Creațifișierul_Numefișier_1" type="string" />
+        <property name="Createfile_FileName" type="string" />
+        <property name="Initializevariable_Value" type="string" />
         <property name="Addarowintoatable_User" type="string" />
       </object>
     </jsonTypes>
@@ -24,9 +22,8 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="Creațifișierul_Conținutfișier" path="/Creațifișierul_Conținutfișier" type="xs:string" required="true" />
-            <param style="plain" name="Creațifișierul_Numefișier" path="/Creațifișierul_Numefișier" type="xs:string" required="true" />
-            <param style="plain" name="Creațifișierul_Numefișier_1" path="/Creațifișierul_Numefișier_1" type="xs:string" required="true" />
+            <param style="plain" name="Createfile_FileName" path="/Createfile_FileName" type="xs:string" required="true" />
+            <param style="plain" name="Initializevariable_Value" path="/Initializevariable_Value" type="xs:string" required="true" />
             <param style="plain" name="Addarowintoatable_User" path="/Addarowintoatable_User" type="xs:string" required="true" />
           </representation>
         </request>
