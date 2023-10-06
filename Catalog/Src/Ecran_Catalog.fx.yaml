@@ -29,7 +29,7 @@ Ecran_Catalog As screen:
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =924
-        Items: =IfError(Sort(varLista,ThisRecord.Code,SortOrder.Ascending),Blank())
+        Items: =IfError(Sort(Filter(varLista,Not(IsBlank(ThisRecord.Code)),Boolean(Status)=true),SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0

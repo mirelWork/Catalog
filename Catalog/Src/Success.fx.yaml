@@ -1,4 +1,5 @@
 "Success As screen.'phoneLayout_Success_ver3.0'":
+    OnHidden: =Timer1.Reset=true
     OnVisible: =Timer1.Start=true
 
     iconCircle2 As circle.Circle:
