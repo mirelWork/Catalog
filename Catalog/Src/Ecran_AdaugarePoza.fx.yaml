@@ -27,8 +27,9 @@ Ecran_AdaugarePoza As screen:
         Height: =50
         OnSelect: |-
             =Set(varUserNick,UtilizatoriOffice365.MyProfileV2().mailNickname) And 
-            Set(BinaryImageData, JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData)) And
-            Salvarepoza.Run(varAdaugarePoza,BinaryImageData,varUserNick)
+            ///Set(imageData;Last(Split(JSON(UploadedImage1.Image;JSONFormat.IncludeBinaryData);",")).Value) And
+            ///Set(base64Data; Left(imageData;Len(imageData)-1)) And
+            Salvarepoza.Run(varAdaugarePoza,UploadedImage1.Image,varUserNick)
         Size: =24
         Text: ="Incarca Poza"
         Width: =280
