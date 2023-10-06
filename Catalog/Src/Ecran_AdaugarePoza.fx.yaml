@@ -40,3 +40,11 @@ Ecran_AdaugarePoza As screen:
         Y: =876
         ZIndex: =4
 
+    Arrow1 As arrow.backArrow:
+        Height: =41
+        OnSelect: =Navigate(Ecran_Catalog)
+        Width: =41
+        X: =15
+        Y: =10
+        ZIndex: =5
+

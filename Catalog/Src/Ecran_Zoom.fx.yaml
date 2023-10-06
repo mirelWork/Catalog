@@ -1,9 +1,10 @@
-"Screen2 As screen.'phoneLayout_Tutorial_ver3.0'":
+"Ecran_Zoom As screen.'phoneLayout_Tutorial_ver3.0'":
 
     PozeMarita As image:
         Height: =760
         Image: =marire
         Width: =Parent.Width
+        Y: =68
         ZIndex: =2
 
     Button1 As button:

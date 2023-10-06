@@ -2,39 +2,45 @@ Ecran_Catalog As screen:
     OnVisible: =
 
     Drop_Categorie As dropdown:
-        Height: =47
+        Default: =Blank()
+        Height: =35
         Items: =Sort(Distinct(catalogList,ThisRecord.'Material Category'),Value,SortOrder.Ascending)
-        OnChange: |-
-            =Set(varCategorie,Drop_Categorie.SelectedText.Value) And 
-            Set(varLista, Filter(catalogList, If(IsBlank(varCategorie),true,'Material Category'= varCategorie),If(IsBlank(varBrand),true,FinalBrand=varBrand),Not(IsBlank(FinalBrand))))
-        OnSelect: =
-        Size: =21
+        OnChange: =Set(varCategorie,Drop_Categorie.SelectedText.Value)
+        Size: =14
         Width: =284
         X: =28
-        Y: =60
+        Y: =92
         ZIndex: =1
 
     Drop_Brand As dropdown:
-        Height: =47
+        Height: =35
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
-        OnChange: |-
-            =Set(varBrand,Drop_Brand.SelectedText.Value) And 
-            Set(varLista, Filter(catalogList, If(IsBlank(varCategorie),true,'Material Category'= varCategorie),If(IsBlank(varBrand),true,FinalBrand=varBrand),Not(IsBlank(FinalBrand))))
-        Size: =21
-        Width: =277
+        OnChange: =Set(varBrand,Drop_Brand.SelectedText.Value)
+        Size: =14
+        Width: =284
         X: =338
-        Y: =60
+        Y: =92
         ZIndex: =2
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =924
-        Items: =IfError(Sort(Filter(varLista,Not(IsBlank(ThisRecord.Code)),Boolean(Status)=true),SortOrder.Ascending),Blank())
+        Height: =853
+        Items: |-
+            =IfError(Sort(
+                Filter(catalogList,
+                    Not(IsBlank(ThisRecord.Code)),
+                    Boolean(Status)=true,
+                    If(IsBlank(varBrand),true,Brand=varBrand),
+                    If(IsBlank(varGrup),true,Category=varGrup),
+                    If(IsBlank(varCategorie),true,'Material Category'=varCategorie),
+                    If(IsBlank(varType),true,'Material Type'=varType)),
+                SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =
         TemplatePadding: =0
-        TemplateSize: =471
-        Y: =209
+        TemplateSize: =468
+        Y: =276
         ZIndex: =3
 
         Title2 As label:
@@ -91,68 +97,110 @@ Ecran_Catalog As screen:
             Height: =34
             Icon: =Icon.Add
             OnSelect: =Set(varAdaugarePoza,ThisItem.Code) And Navigate(Ecran_AdaugarePoza)
-            Tooltip: ="Adauga o poza."
+            Tooltip: ="Adauga o poza"
             Width: =49
-            X: =532
-            Y: =161
+            X: =525
+            Y: =200
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
             Height: =377
             HtmlText: |
                 ="<center>
-                <img src="&ThisItem.Photo&" height=290 />"
-            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,ThisItem.Photo) And Navigate(Screen2))
+                <img src="&ThisItem.Photo&" height=290 />
+                </center>"
+            OnSelect: =Select(Parent)
             Width: =340
             X: =150
             ZIndex: =9
 
+        Icon4 As icon.ExpandView:
+            Height: =38
+            Icon: =Icon.ExpandView
+            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,ThisItem.Photo) And Navigate(Ecran_Zoom))
+            Tooltip: ="Mareste poza"
+            Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
+            Width: =36
+            X: =454
+            Y: =339
+            ZIndex: =10
+
     Label1 As label:
         Align: =Align.Center
-        Height: =60
+        Height: =32
         OnSelect: =
         Size: =21
         Text: ="Categorie"
         Width: =284
         X: =28
+        Y: =51
         ZIndex: =5
 
     Label1_1 As label:
         Align: =Align.Center
-        Height: =60
+        Height: =32
         Size: =21
         Text: ="Brand"
         Width: =277
         X: =338
+        Y: =51
         ZIndex: =6
 
     Rectangle3 As rectangle:
         Height: =8
         Width: =640
-        Y: =190
+        Y: =268
         ZIndex: =7
 
-    Drop_Categorie_1 As dropdown:
-        Height: =47
+    Grup As dropdown:
+        Height: =34
         Items: =Sort(Distinct(catalogList,ThisRecord.Category),Value,SortOrder.Ascending)
-        OnChange: |-
-            =Set(varGrup,Drop_Categorie_1.SelectedText.Value) And 
-            Set(varLista, Filter(catalogList, If(IsBlank(varCategorie),true,'Material Category'= varCategorie),If(IsBlank(varBrand),true,FinalBrand=varBrand),Not(IsBlank(FinalBrand))))
+        OnChange: =Set(varGrup,Grup.SelectedText.Value)
         OnSelect: =
-        Size: =21
+        Size: =14
         Width: =284
         X: =338
-        Y: =125
+        Y: =170
         ZIndex: =8
 
-    Drop_Categorie_2 As dropdown:
-        Height: =47
+    AssetType As dropdown:
+        Height: =33
         Items: =Sort(Distinct(catalogList,ThisRecord.'Material Type'),Value,SortOrder.Ascending)
-        OnChange: =
-        OnSelect: =
-        Size: =21
+        OnChange: =Set(varType,AssetType.SelectedText.Value)
+        Size: =14
         Width: =284
         X: =28
-        Y: =125
+        Y: =170
         ZIndex: =9
+
+    Label1_2 As label:
+        Align: =Align.Center
+        Height: =32
+        OnSelect: =
+        Size: =21
+        Text: ="Categorie"
+        Width: =284
+        X: =28
+        Y: =132
+        ZIndex: =10
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Height: =32
+        Size: =21
+        Text: ="Brand"
+        Width: =277
+        X: =338
+        Y: =132
+        ZIndex: =11
+
+    Label4 As label:
+        Height: =34
+        Size: =21
+        Text: ="Nu s-au gasit materiale cu acest filtru."
+        Visible: =IsEmpty(ListaMateriale.AllItems)
+        Width: =560
+        X: =40
+        Y: =230
+        ZIndex: =13
 
