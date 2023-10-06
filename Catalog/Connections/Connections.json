@@ -18,8 +18,24 @@
       "Documente INDICATORI"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "79052265-7e97-45b7-bb5a-5c31c2e89110"
+    ],
     "id": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+  },
+  "39292e1e-d9dc-43df-a13a-0af3cbcc3208": {
+    "connectionRef": {
+      "displayName": "Utilizatori Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3414/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "UtilizatoriOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "39292e1e-d9dc-43df-a13a-0af3cbcc3208"
   },
   "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
     "appActions": [
@@ -48,6 +64,9 @@
         "dataSources": {
           "Catalog": {
             "tableName": "{C271EFFC-5C0E-4638-918F-86E470AD60E2}"
+          },
+          "Uploads": {
+            "tableName": "{F60F5641-C336-4522-A46D-6FC676055596}"
           }
         }
       }
@@ -55,10 +74,42 @@
     "dataSources": [
       "Table1",
       "Table2",
-      "Catalog"
+      "Catalog",
+      "Uploads"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "79052265-7e97-45b7-bb5a-5c31c2e89110"
+    ],
     "id": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
+  },
+  "79052265-7e97-45b7-bb5a-5c31c2e89110": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Salvarepoza"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "5d7fdb37-ae06-476c-b42d-42031ce252bd",
+      "shared_sharepointonline": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+    },
+    "dependents": [],
+    "id": "79052265-7e97-45b7-bb5a-5c31c2e89110"
   }
 }

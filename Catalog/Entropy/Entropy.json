@@ -2,72 +2,90 @@
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
+    "AddMediaButton1": 27,
+    "AddMediaWithImage1": 28,
     "App": 1,
-    "Button1": 47,
-    "Drop_Brand": 12,
-    "Drop_Categorie": 9,
-    "Drop_Categorie_1": 10,
-    "Drop_Categorie_2": 11,
-    "Ecran_AdaugarePoza": 23,
-    "Ecran_Catalog": 6,
-    "galleryTemplate2": 17,
+    "Button1": 7,
+    "Button2": 31,
+    "Drop_Brand": 14,
+    "Drop_Categorie": 13,
+    "Drop_Categorie_1": 16,
+    "Drop_Categorie_2": 15,
+    "Ecran_AdaugarePoza": 4,
+    "Ecran_Catalog": 10,
+    "galleryTemplate2": 19,
     "Host": 3,
-    "HtmlText1": 37,
-    "Icon2": 16,
-    "Icon3": 5,
-    "Label1": 7,
-    "Label1_1": 8,
-    "ListaMateriale": 14,
-    "PozeMarita": 42,
-    "Rectangle2": 18,
-    "Rectangle3": 13,
-    "Screen1": 4,
-    "Screen2": 38,
-    "Separator2": 22,
-    "Subtitle2": 21,
-    "Title2": 20
+    "HtmlText1": 21,
+    "Icon2": 22,
+    "Icon3": 9,
+    "Label1": 11,
+    "Label1_1": 12,
+    "ListaMateriale": 18,
+    "PozeMarita": 6,
+    "Rectangle2": 20,
+    "Rectangle3": 17,
+    "Screen1": 8,
+    "Screen2": 5,
+    "Separator2": 25,
+    "Subtitle2": 24,
+    "Title2": 23,
+    "UploadedImage1": 26
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/05/2023 19:11:23",
+  "HeaderLastSavedDateTimeUTC": "10/06/2023 07:13:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0f84ed25-278c-4720-952d-7b5557a5d6ef": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9ad7636121d249f5b345a17d2c634dd3\"",
-    "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\""
+    "39292e1e-d9dc-43df-a13a-0af3cbcc3208": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5119790fdd1d47c4a7acb3f757c88389\"",
+    "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\"",
+    "79052265-7e97-45b7-bb5a-5c31c2e89110": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/C3CD4AAA73574A8A8BA0BC6E852E8674-D3A40745BFB64A70\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
     "Picture1": "0001.jpg"
   },
   "LocalResourceRootPaths": {
-    "Picture1": "https://docserverpwaprodweu.blob.core.windows.net/c49bd816-b603-4792-8524-a294848bd351-1/resource/Assets0Images00001.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-05T17%3A33%3A23Z&ske=2023-10-06T17%3A48%3A23Z&sks=b&skv=2021-08-06&sv=2021-08-06&spr=https&se=2023-10-06T17%3A48%3A23Z&sr=b&sp=r&sig=WXSbxJjGmw9bAOVSUUUU5B2mcuxIR80MQ7hiAI0OLJY%3D"
+    "Picture1": "https://docserverpwaprodneu.blob.core.windows.net/d1408068-2076-42c8-93be-56625aacfa90-1/resource/Assets0Images00001.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-06T06%3A01%3A09Z&ske=2023-10-07T06%3A16%3A09Z&sks=b&skv=2021-08-06&sv=2021-08-06&spr=https&se=2023-10-07T06%3A16%3A09Z&sr=b&sp=r&sig=v1mz5Eyi97g08Pl57KA6CF0ksRuZGqmyzdC50CRX6PA%3D"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "Catalog": 5,
-    "ComboBoxSample": 1,
-    "CustomGallerySample": 2,
-    "Documente INDICATORI": 0,
-    "DropDownSample": 3,
-    "ListboxSample": 4
+    "Catalog": 7,
+    "ComboBoxSample": 3,
+    "CustomGallerySample": 4,
+    "Documente INDICATORI": 2,
+    "DropDownSample": 5,
+    "ListboxSample": 6,
+    "Salvarepoza": 1,
+    "Uploads": 8,
+    "UtilizatoriOffice365": 0
   },
-  "OrderGroupControls": {},
+  "OrderGroupControls": {
+    "AddMediaWithImage1": {
+      "AddMediaButton1": 1,
+      "UploadedImage1": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 7,
-    "dropdown": 2,
-    "gallery": 4,
-    "htmlViewer": 5,
-    "icon": 0,
-    "image": 6,
-    "label": 1,
-    "rectangle": 3
+    "addMedia": 1,
+    "button": 2,
+    "dropdown": 5,
+    "gallery": 7,
+    "htmlViewer": 8,
+    "icon": 3,
+    "image": 0,
+    "label": 4,
+    "rectangle": 6
   },
   "OverridablePropertiesEntry": {
+    "AddMediaButton1": {},
+    "AddMediaWithImage1": {},
     "App": {},
     "Button1": {},
+    "Button2": {},
     "Drop_Brand": {},
     "Drop_Categorie": {},
     "Drop_Categorie_1": {},
@@ -89,13 +107,17 @@
     "Screen2": {},
     "Separator2": {},
     "Subtitle2": {},
-    "Title2": {}
+    "Title2": {},
+    "UploadedImage1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
+    "AddMediaButton1": 18,
+    "AddMediaWithImage1": 16,
     "App": 0,
-    "Button1": 17,
+    "Button1": 21,
+    "Button2": 19,
     "Drop_Brand": 4,
     "Drop_Categorie": 3,
     "Drop_Categorie_1": 6,
@@ -110,14 +132,15 @@
     "Label1": 1,
     "Label1_1": 2,
     "ListaMateriale": 8,
-    "PozeMarita": 16,
+    "PozeMarita": 20,
     "Rectangle2": 10,
     "Rectangle3": 7,
     "Screen1": 3,
     "Screen2": 0,
     "Separator2": 15,
     "Subtitle2": 14,
-    "Title2": 13
+    "Title2": 13,
+    "UploadedImage1": 17
   },
   "ResourcesJsonIndices": {
     "Image-Picture1": 2,
@@ -127,19 +150,21 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1958457,
+    "AnalysisLoadTime": 0.1548221,
     "ControlCount": {
+      "addMedia": 3,
+      "button": 1,
       "dropdown": 4,
-      "gallery": 2,
-      "galleryTemplate": 2,
-      "icon": 4,
-      "image": 2,
-      "label": 6,
-      "pdfViewer": 1,
-      "rectangle": 5,
-      "screen": 3
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "htmlViewer": 1,
+      "icon": 2,
+      "image": 1,
+      "label": 4,
+      "rectangle": 3,
+      "screen": 4
     },
-    "DeserializationLoadTime": 1.1700966
+    "DeserializationLoadTime": 1.2169674
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

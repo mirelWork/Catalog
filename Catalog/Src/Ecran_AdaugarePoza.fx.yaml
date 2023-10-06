@@ -1,2 +1,35 @@
 Ecran_AdaugarePoza As screen:
 
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        UploadedImage1 As image:
+            Height: =795
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            Width: =640
+            Y: =64
+            ZIndex: =2
+
+        AddMediaButton1 As addMedia:
+            ChangePictureText: ="Selecteaza Poza"
+            Fill: =RGBA(186, 202, 226, 1)
+            Height: =129
+            Size: =10
+            Width: =640
+            Y: =859
+            ZIndex: =3
+
+    Button2 As button:
+        Height: =50
+        OnSelect: =Salvarepoza.Run(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),varAdaugarePoza,Blank(),UtilizatoriOffice365.MyProfile().MailNickname)
+        Size: =24
+        Text: ="Incarca Poza"
+        Width: =280
+        X: =180
+        Y: =1050
+        ZIndex: =4
+
