@@ -6,9 +6,9 @@ Ecran_Catalog As screen:
         Height: =35
         Items: =Sort(Distinct(catalogList,ThisRecord.'Material Category'),Value,SortOrder.Ascending)
         OnChange: |
-            =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
-            Set(varType,AssetType.SelectedText.Value) And
-            Set(varGrup,Grup.SelectedText.Value)
+            =Reset(AssetType) And
+            Reset(Grup) And
+            Set(varType,AssetType.SelectedText.Value) And Set(varBrand,Drop_Brand.SelectedText.Value)And Set(varCategorie,Drop_Categorie.SelectedText.Value)
         Size: =14
         Width: =284
         X: =28
@@ -18,10 +18,11 @@ Ecran_Catalog As screen:
     Drop_Brand As dropdown:
         Height: =35
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
-        OnChange: |-
-            =Set(varBrand,Drop_Brand.SelectedText.Value) And
-            Set(varType,AssetType.SelectedText.Value) And
-            Set(varGrup,Grup.SelectedText.Value)
+        OnChange: |+
+            =Reset(AssetType) And
+            Reset(Grup) And
+            Set(varType,AssetType.SelectedText.Value) And Set(varBrand,Drop_Brand.SelectedText.Value)And Set(varGrup,Grup.SelectedText.Value)
+            
         Size: =14
         Width: =284
         X: =338
@@ -179,8 +180,6 @@ Ecran_Catalog As screen:
         Height: =33
         Items: |-
             =Sort(Distinct(Filter(catalogList,
-                    If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varGrup),true,Category=varGrup),
                     If(IsBlank(varCategorie),true,'Material Category'=varCategorie)),ThisRecord.'Material Type'),Value,SortOrder.Ascending)
         OnChange: =Set(varType,AssetType.SelectedText.Value)
         Size: =14
