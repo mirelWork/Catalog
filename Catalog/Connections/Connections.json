@@ -1,45 +1,4 @@
 {
-  "08d3a5dc-6e87-404e-b756-40d78408e4b8": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
-          "value": "shared_sharepointonline"
-        },
-        "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
-          "value": "shared_excelonlinebusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
-        },
-        "shared_sharepointonline": {
-          "value": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "Salvarepoza"
-    ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "5d7fdb37-ae06-476c-b42d-42031ce252bd",
-      "shared_sharepointonline": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
-    },
-    "dependents": [],
-    "id": "08d3a5dc-6e87-404e-b756-40d78408e4b8"
-  },
   "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -60,7 +19,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "08d3a5dc-6e87-404e-b756-40d78408e4b8"
+      "b3434495-2596-439e-871b-39da807405b6"
     ],
     "id": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
   },
@@ -120,8 +79,37 @@
     ],
     "dependencies": {},
     "dependents": [
-      "08d3a5dc-6e87-404e-b756-40d78408e4b8"
+      "b3434495-2596-439e-871b-39da807405b6"
     ],
     "id": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
+  },
+  "b3434495-2596-439e-871b-39da807405b6": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Salvarepoza"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "5d7fdb37-ae06-476c-b42d-42031ce252bd",
+      "shared_sharepointonline": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+    },
+    "dependents": [],
+    "id": "b3434495-2596-439e-871b-39da807405b6"
   }
 }

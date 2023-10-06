@@ -3,12 +3,12 @@
   <grammars>
     <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Createfile_FileName_def" />
-      <string name="ManualTriggerInput_Initializevariable_Value_def" />
       <string name="ManualTriggerInput_Addarowintoatable_User_def" />
+      <string name="ManualTriggerInput_Createfile_FileContent_def" />
       <object name="ManualTriggerInput">
         <property name="Createfile_FileName" type="string" />
-        <property name="Initializevariable_Value" type="string" />
         <property name="Addarowintoatable_User" type="string" />
+        <property name="Createfile_FileContent" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -23,8 +23,8 @@
           </param>
           <representation mediaType="application/json">
             <param style="plain" name="Createfile_FileName" path="/Createfile_FileName" type="xs:string" required="true" />
-            <param style="plain" name="Initializevariable_Value" path="/Initializevariable_Value" type="xs:string" required="true" />
             <param style="plain" name="Addarowintoatable_User" path="/Addarowintoatable_User" type="xs:string" required="true" />
+            <param style="plain" name="Createfile_FileContent" path="/Createfile_FileContent" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
