@@ -8,8 +8,8 @@ Screen1 As screen:
         Icon: =Icon.NextArrow
         OnSelect: =Navigate(Ecran_Catalog)
         Width: =69
-        X: =531
-        Y: =1026
+        X: =522
+        Y: =1011
         ZIndex: =1
 
     "'Logo ursus' As image":
@@ -18,13 +18,15 @@ Screen1 As screen:
         ImagePosition: =ImagePosition.Center
         Width: =638
         X: =2
-        Y: =282
+        Y: =354
         ZIndex: =2
 
     Image3 As image:
-        Height: =192
-        Image: =Fabrics
-        Width: =192
+        DisabledBorderColor: =
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        Height: =177
+        Image: =fabrica
+        Width: =178
         X: =54
         Y: =45
         ZIndex: =3
