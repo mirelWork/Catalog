@@ -2,6 +2,7 @@ Ecran_Catalog As screen:
     OnVisible: =
 
     Drop_Categorie As dropdown:
+        AllowEmptySelection: =true
         Default: =Blank()
         Height: =35
         Items: =Sort(Distinct(catalogList,ThisRecord.'Material Category'),Value,SortOrder.Ascending)
@@ -16,6 +17,7 @@ Ecran_Catalog As screen:
         ZIndex: =1
 
     Drop_Brand As dropdown:
+        AllowEmptySelection: =true
         Height: =35
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
         OnChange: |+
@@ -160,6 +162,7 @@ Ecran_Catalog As screen:
         ZIndex: =7
 
     Grup As dropdown:
+        AllowEmptySelection: =true
         Height: =34
         Items: |-
             =Sort(Distinct(Filter(catalogList,
@@ -177,6 +180,7 @@ Ecran_Catalog As screen:
         ZIndex: =8
 
     AssetType As dropdown:
+        AllowEmptySelection: =true
         Height: =33
         Items: |-
             =Sort(Distinct(Filter(catalogList,
