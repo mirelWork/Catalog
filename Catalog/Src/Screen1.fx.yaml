@@ -3,12 +3,29 @@ Screen1 As screen:
     ImagePosition: =ImagePosition.Fill
 
     Icon3 As icon.Search:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =217
-        Icon: =Icon.Search
+        Color: =RGBA(171, 136, 90, 1)
+        Height: =73
+        Icon: =Icon.NextArrow
         OnSelect: =Navigate(Ecran_Catalog)
-        Width: =234
-        X: =45
-        Y: =125
+        Width: =69
+        X: =531
+        Y: =1026
         ZIndex: =1
+
+    "'Logo ursus' As image":
+        Height: =240
+        Image: ='logo 2'
+        ImagePosition: =ImagePosition.Center
+        Width: =638
+        X: =2
+        Y: =282
+        ZIndex: =2
+
+    Image3 As image:
+        Height: =192
+        Image: =Fabrics
+        Width: =192
+        X: =54
+        Y: =45
+        ZIndex: =3
 
