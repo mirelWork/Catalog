@@ -113,7 +113,7 @@ Ecran_Catalog As screen:
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
-            Height: =377
+            Height: =347
             HtmlText: |
                 ="<center>
                 <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=290 />
@@ -121,12 +121,13 @@ Ecran_Catalog As screen:
             OnSelect: =Select(Parent)
             Width: =340
             X: =150
+            Y: =30
             ZIndex: =9
 
         Icon4 As icon.ExpandView:
             Height: =38
             Icon: =Icon.ExpandView
-            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,ThisItem.Photo) And Navigate(Ecran_Zoom))
+            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large) And Navigate(Ecran_Zoom))
             Tooltip: ="Mareste poza"
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
             Width: =36
