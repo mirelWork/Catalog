@@ -1,5 +1,5 @@
 Ecran_AdaugarePoza As screen:
-    OnVisible: =Set(pozaSelectata,false)
+    OnVisible: =
 
     AddMediaWithImage1 As group:
         Height: =5
@@ -10,7 +10,8 @@ Ecran_AdaugarePoza As screen:
 
         UploadedImage1 As image:
             Height: =649
-            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            Image: =If(IsBlank(AddMediaButton1.Media), Blank(), AddMediaButton1.Media)
+            OnSelect: =Button2.Visible=true
             Width: =640
             Y: =64
             ZIndex: =1
@@ -19,7 +20,8 @@ Ecran_AdaugarePoza As screen:
             ChangePictureText: ="Selecteaza Poza"
             Fill: =RGBA(186, 202, 226, 1)
             Height: =67
-            OnSelect: =Set(pozaSelectata,true)
+            OnChange: =Button2.Visible=true
+            OnSelect: =Button2.Visible=true
             Size: =10
             Width: =640
             Y: =713
@@ -37,6 +39,7 @@ Ecran_AdaugarePoza As screen:
             Set(base64Data,Blank()) And Navigate(Success)
         Size: =24
         Text: ="Incarca Poza"
+        Visible: =Not(IsBlank(UploadedImage1.Image))
         Width: =280
         X: =180
         Y: =876
