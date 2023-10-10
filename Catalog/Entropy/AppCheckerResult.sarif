@@ -193,36 +193,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Ecran_Catalog.Grup.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Ecran_Catalog.Grup.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Ecran_Catalog",
-                "type": "Ecran_Catalog.Grup"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Ecran_Catalog.ListaMateriale.AccessibleLabel"
                 }
               ],

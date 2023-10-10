@@ -5,11 +5,10 @@ Ecran_Catalog As screen:
         AllowEmptySelection: =true
         Default: =Blank()
         Height: =35
-        Items: =Sort(Distinct(catalogList,ThisRecord.'Material Category'),Value,SortOrder.Ascending)
-        OnChange: |
-            =Reset(AssetType) And
-            Reset(Grup) And
-            Set(varType,AssetType.SelectedText.Value) And Set(varBrand,Drop_Brand.SelectedText.Value)And Set(varCategorie,Drop_Categorie.SelectedText.Value)
+        Items: =Sort(Distinct(catalogList,ThisRecord.Categorie),Value,SortOrder.Ascending)
+        OnChange: |-
+            =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
+            Set(varType,Blank())
         Size: =14
         Width: =284
         X: =28
@@ -18,13 +17,11 @@ Ecran_Catalog As screen:
 
     Drop_Brand As dropdown:
         AllowEmptySelection: =true
+        Default: =Blank()
         Height: =35
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
-        OnChange: |+
-            =Reset(AssetType) And
-            Reset(Grup) And
-            Set(varType,AssetType.SelectedText.Value) And Set(varBrand,Drop_Brand.SelectedText.Value)And Set(varGrup,Grup.SelectedText.Value)
-            
+        OnChange: |
+            =Set(varBrand,Drop_Brand.SelectedText.Value)
         Size: =14
         Width: =284
         X: =338
@@ -32,7 +29,6 @@ Ecran_Catalog As screen:
         ZIndex: =2
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
         Height: =853
         Items: |-
             =IfError(Sort(
@@ -40,9 +36,9 @@ Ecran_Catalog As screen:
                     Not(IsBlank(ThisRecord.Code)),          Not(IsBlank(ThisRecord.EnglishName)),
                     Boolean(Status)=true,
                     If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varGrup),true,Category=varGrup),
-                    If(IsBlank(varCategorie),true,'Material Category'=varCategorie),
-                    If(IsBlank(varType),true,'Material Type'=varType)),
+                    //If(IsBlank(varGrup);true;Category=varGrup);
+                    If(IsBlank(varCategorie),true,Categorie=varCategorie),
+                    If(IsBlank(varType),true,'Tip Material'=varType)),
                 SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -162,30 +158,10 @@ Ecran_Catalog As screen:
         Y: =268
         ZIndex: =7
 
-    Grup As dropdown:
-        AllowEmptySelection: =true
-        Height: =34
-        Items: |-
-            =Sort(Distinct(Filter(catalogList,
-                    If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varCategorie),true,'Material Category'=varCategorie)),
-                   ThisRecord.Category),Value,SortOrder.Ascending)
-        OnChange: |-
-            =Set(varGrup,Grup.SelectedText.Value) And 
-            Set(varType,AssetType.SelectedText.Value)
-        OnSelect: =
-        Size: =14
-        Width: =284
-        X: =338
-        Y: =170
-        ZIndex: =8
-
     AssetType As dropdown:
         AllowEmptySelection: =true
         Height: =33
-        Items: |-
-            =Sort(Distinct(Filter(catalogList,
-                    If(IsBlank(varCategorie),true,'Material Category'=varCategorie)),ThisRecord.'Material Type'),Value,SortOrder.Ascending)
+        Items: =Sort(Distinct(Filter(Catalog, Categorie = Drop_Categorie.Selected.Value),'Tip Material'),Value)
         OnChange: =Set(varType,AssetType.SelectedText.Value)
         Size: =14
         Width: =284
@@ -203,16 +179,6 @@ Ecran_Catalog As screen:
         X: =28
         Y: =132
         ZIndex: =10
-
-    Label1_3 As label:
-        Align: =Align.Center
-        Height: =32
-        Size: =21
-        Text: ="Grup"
-        Width: =277
-        X: =338
-        Y: =132
-        ZIndex: =11
 
     Label4 As label:
         Height: =34

@@ -11,6 +11,7 @@
       "Asociate": "Asociate",
       "Brand": "Brand",
       "Capacity": "Capacity",
+      "Categorie": "Categorie",
       "Category": "Category",
       "Code": "Code",
       "Color": "Color",
@@ -29,6 +30,7 @@
       "Photo": "Photo",
       "Status": "Status",
       "Support": "Support",
+      "Tip Material": "Tip Material",
       "Type": "Type",
       "Type Name": "Type Name",
       "UnderZeroDegrees": "UnderZeroDegrees"
