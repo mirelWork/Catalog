@@ -45,14 +45,14 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/10/2023 09:42:54",
+  "HeaderLastSavedDateTimeUTC": "10/10/2023 13:02:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
+    "0c4f2606-e56a-44a9-81b1-3f72cec3f525": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/C3CD4AAA73574A8A8BA0BC6E852E8674-D3A40745BFB64A70\"",
     "0f84ed25-278c-4720-952d-7b5557a5d6ef": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9ad7636121d249f5b345a17d2c634dd3\"",
     "39292e1e-d9dc-43df-a13a-0af3cbcc3208": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5119790fdd1d47c4a7acb3f757c88389\"",
     "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\"",
-    "60b810e0-fc8d-4cc9-abf4-0bf9ba0bc21f": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/C3CD4AAA73574A8A8BA0BC6E852E8674-D3A40745BFB64A70\"",
-    "8f0ca5e0-8931-4275-8222-29df24cfd2e3": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\""
+    "deb094ca-a905-4577-b1e4-5746e8d2468f": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -102,15 +102,15 @@
     "addMedia": 11,
     "arrow": 10,
     "button": 5,
-    "circle": 0,
+    "circle": 1,
     "dropdown": 6,
     "gallery": 8,
     "htmlViewer": 9,
-    "icon": 1,
+    "icon": 2,
     "image": 4,
     "label": 3,
     "rectangle": 7,
-    "timer": 2
+    "timer": 0
   },
   "OverridablePropertiesEntry": {
     "AddMediaButton1": {},
@@ -176,8 +176,8 @@
     "Icon2": 17,
     "Icon3": 2,
     "Icon4": 18,
-    "iconCheck2": 30,
-    "iconCircle2": 29,
+    "iconCheck2": 31,
+    "iconCircle2": 30,
     "Image3": 0,
     "Label1": 3,
     "Label1_1": 4,
@@ -194,7 +194,7 @@
     "Separator2": 21,
     "Subtitle2": 20,
     "Success": 0,
-    "Timer1": 31,
+    "Timer1": 29,
     "Title2": 19,
     "UploadedImage1": 24
   },
