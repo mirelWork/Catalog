@@ -62,6 +62,7 @@ Ecran_AdaugarePoza As screen:
             Height: =70
             Size: =21
             Text: ="Selecteaza o poza."
+            Visible: =false
             Width: =500
             Y: =40
             ZIndex: =1
