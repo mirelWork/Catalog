@@ -8,7 +8,8 @@ Ecran_Catalog As screen:
         Items: =Sort(Distinct(catalogList,ThisRecord.Categorie),Value,SortOrder.Ascending)
         OnChange: |-
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
-            Set(varType,Blank())
+            Set(varType,Blank()) And
+            Reset(ListaMateriale)
         Size: =14
         Width: =284
         X: =28
@@ -20,8 +21,10 @@ Ecran_Catalog As screen:
         Default: =Blank()
         Height: =35
         Items: =Sort(Distinct(catalogList,FinalBrand),Value,SortOrder.Ascending)
-        OnChange: |
+        OnChange: |-
             =Set(varBrand,Drop_Brand.SelectedText.Value)
+            And
+            Reset(ListaMateriale)
         Size: =14
         Width: =284
         X: =338
@@ -162,7 +165,9 @@ Ecran_Catalog As screen:
         AllowEmptySelection: =true
         Height: =33
         Items: =Sort(Distinct(Filter(catalogList,varCategorie=ThisRecord.Categorie),'Tip Material'),Value,SortOrder.Ascending)
-        OnChange: =Set(varType,AssetType.SelectedText.Value)
+        OnChange: |-
+            =Set(varType,AssetType.SelectedText.Value) And
+            Reset(ListaMateriale)
         Size: =14
         Width: =284
         X: =28
