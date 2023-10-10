@@ -116,7 +116,7 @@ Ecran_Catalog As screen:
             Height: =377
             HtmlText: |
                 ="<center>
-                <img src="&ThisItem.Photo&" height=290 />
+                <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=290 />
                 </center>"
             OnSelect: =Select(Parent)
             Width: =340
