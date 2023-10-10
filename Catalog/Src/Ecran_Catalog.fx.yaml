@@ -161,7 +161,7 @@ Ecran_Catalog As screen:
     AssetType As dropdown:
         AllowEmptySelection: =true
         Height: =33
-        Items: =Sort(Distinct(Filter(Catalog, Categorie = Drop_Categorie.Selected.Value),'Tip Material'),Value)
+        Items: =Sort(Distinct(Filter(catalogList,varCategorie=ThisRecord.Categorie),'Tip Material'),Value,SortOrder.Ascending)
         OnChange: =Set(varType,AssetType.SelectedText.Value)
         Size: =14
         Width: =284
