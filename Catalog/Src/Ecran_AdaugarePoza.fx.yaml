@@ -1,4 +1,5 @@
 Ecran_AdaugarePoza As screen:
+    OnVisible: =Set(pozaSelectata,false)
 
     AddMediaWithImage1 As group:
         Height: =5
@@ -12,17 +13,17 @@ Ecran_AdaugarePoza As screen:
             Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
             Width: =640
             Y: =64
-            ZIndex: =2
+            ZIndex: =1
 
         AddMediaButton1 As addMedia:
             ChangePictureText: ="Selecteaza Poza"
             Fill: =RGBA(186, 202, 226, 1)
             Height: =67
-            OnSelect: =Label2.Visible=false
+            OnSelect: =Set(pozaSelectata,true)
             Size: =10
             Width: =640
             Y: =713
-            ZIndex: =3
+            ZIndex: =2
 
     Button2 As button:
         Height: =50
@@ -30,17 +31,16 @@ Ecran_AdaugarePoza As screen:
             =Set(varUserNick,UtilizatoriOffice365.MyProfileV2().mailNickname) And 
             Set(imageData,Last(Split(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),",")).Value) And
             Set(base64Data, Left(imageData,Len(imageData)-1)) And
-            If(base64Data=Blank(),Blank(),
             Salvarepoza.Run(varAdaugarePoza,varUserNick,base64Data) And
             Reset(AddMediaButton1) And
             Set(imageData,Blank()) And
-            Set(base64Data,Blank()) And Navigate(Success))
+            Set(base64Data,Blank()) And Navigate(Success)
         Size: =24
         Text: ="Incarca Poza"
         Width: =280
         X: =180
         Y: =876
-        ZIndex: =4
+        ZIndex: =3
 
     Arrow1 As arrow.backArrow:
         Height: =41
@@ -48,22 +48,5 @@ Ecran_AdaugarePoza As screen:
         Width: =41
         X: =15
         Y: =10
-        ZIndex: =5
-
-    Container1 As groupContainer.manualLayoutContainer:
-        Height: =225
-        X: =70
-        Y: =430
-        ZIndex: =6
-
-        Label2 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =70
-            Size: =21
-            Text: ="Selecteaza o poza."
-            Visible: =false
-            Width: =500
-            Y: =40
-            ZIndex: =1
+        ZIndex: =4
 
