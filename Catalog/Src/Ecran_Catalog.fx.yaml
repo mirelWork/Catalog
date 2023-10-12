@@ -53,7 +53,8 @@ Ecran_Catalog As screen:
                     If(IsBlank(varBrand),true,FinalBrand=varBrand),
                     //If(IsBlank(varGrup);true;Category=varGrup);
                     If(IsBlank(varCategorie),true,Categorie=varCategorie),
-                    If(IsBlank(varType),true,'Tip Material'=varType)),
+                    If(IsBlank(varType),true,'Tip Material'=varType),
+                    If(IsBlank(varCod),true,StartsWith(Code,varCod))),
                 SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -212,4 +213,32 @@ Ecran_Catalog As screen:
         X: =40
         Y: =230
         ZIndex: =13
+
+    Label1_3 As label:
+        Align: =Align.Center
+        Height: =32
+        OnSelect: =
+        Size: =21
+        Text: ="Cod Material"
+        Width: =284
+        X: =331
+        Y: =132
+        ZIndex: =14
+
+    TextInput1 As text:
+        Default: =Blank()
+        Format: =TextFormat.Number
+        Height: =33
+        HintText: =""
+        MaxLength: =6
+        OnChange: |-
+            =Set(varCategorie,Blank()) And
+            Set(varBrand,Blank()) And
+            Set(varType,Blank()) And
+            Set(varCod,TextInput1.Text)
+        Size: =14
+        Width: =284
+        X: =338
+        Y: =170
+        ZIndex: =15
 
