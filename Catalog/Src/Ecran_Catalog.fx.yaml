@@ -1,10 +1,28 @@
 Ecran_Catalog As screen:
+    Fill: =RGBA(30, 45, 62, 1)
+    LoadingSpinnerColor: =RGBA(0, 188, 242, 1)
     OnVisible: =
 
     Drop_Categorie As dropdown:
         AllowEmptySelection: =true
+        BorderColor: =RGBA(85, 106, 129, 1)
+        ChevronBackground: =RGBA(30, 45, 62, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(218, 218, 218, 1)
+        ChevronHoverBackground: =RGBA(67, 85, 106, 1)
+        ChevronHoverFill: =RGBA(218, 218, 218, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Default: =varCategorie
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 45, 62, 1)
+        Font: =Font.'Segoe UI'
         Height: =35
+        HoverBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(67, 85, 106, 1)
         Items: |-
             =Sort(Distinct(Filter(catalogList,
                     Not(IsBlank(ThisRecord.Code)),
@@ -16,6 +34,15 @@ Ecran_Catalog As screen:
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
             If(AssetType.SelectedText.Value=varType,false,Set(varType,Blank())) And
             Reset(ListaMateriale)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedColor: =RGBA(30, 45, 62, 1)
+        PressedFill: =RGBA(0, 188, 242, 1)
+        SelectionColor: =RGBA(30, 45, 62, 1)
+        SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
         X: =28
@@ -24,8 +51,24 @@ Ecran_Catalog As screen:
 
     Drop_Brand As dropdown:
         AllowEmptySelection: =true
+        BorderColor: =RGBA(85, 106, 129, 1)
+        ChevronBackground: =RGBA(30, 45, 62, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(218, 218, 218, 1)
+        ChevronHoverBackground: =RGBA(67, 85, 106, 1)
+        ChevronHoverFill: =RGBA(218, 218, 218, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Default: =varBrand
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 45, 62, 1)
+        Font: =Font.'Segoe UI'
         Height: =35
+        HoverBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(67, 85, 106, 1)
         Items: |-
             =Sort(Distinct(Filter(catalogList,
                     Not(IsBlank(ThisRecord.Code)),
@@ -37,6 +80,15 @@ Ecran_Catalog As screen:
             =Set(varBrand,Drop_Brand.SelectedText.Value)
             And
             Reset(ListaMateriale)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedColor: =RGBA(30, 45, 62, 1)
+        PressedFill: =RGBA(0, 188, 242, 1)
+        SelectionColor: =RGBA(30, 45, 62, 1)
+        SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
         X: =338
@@ -44,6 +96,7 @@ Ecran_Catalog As screen:
         ZIndex: =2
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(85, 106, 129, 1)
         Height: =853
         Items: |-
             =IfError(Sort(
@@ -66,6 +119,9 @@ Ecran_Catalog As screen:
 
         Title2 As label:
             Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =42
             OnSelect: =Select(Parent)
@@ -83,6 +139,9 @@ Ecran_Catalog As screen:
 
         Subtitle2 As label:
             Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             OnSelect: =Select(Parent)
             Overflow: =Overflow.Scroll
@@ -98,7 +157,8 @@ Ecran_Catalog As screen:
             ZIndex: =3
 
         Separator2 As rectangle:
-            Fill: =RGBA(153, 207, 236, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(229, 248, 254, 1)
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
@@ -106,6 +166,7 @@ Ecran_Catalog As screen:
             ZIndex: =5
 
         Rectangle2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(56, 96, 178, 1)
             Height: =Parent.TemplateHeight - Separator2.Height
             OnSelect: =Select(Parent)
@@ -114,10 +175,21 @@ Ecran_Catalog As screen:
             ZIndex: =6
 
         Icon2 As icon.Add:
-            Color: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),RGBA(0, 18, 107, 1),RGBA(255, 0, 0, 0.8))
+            BorderColor: =RGBA(85, 106, 129, 1)
+            Color: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),ColorFade(RGBA(0, 188, 242, 1), 30%),RGBA(255, 0, 10, 100))
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =34
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Add
             OnSelect: =Set(varAdaugarePoza,ThisItem.Code) And Navigate(Ecran_AdaugarePoza)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: ="Adauga o poza"
             Width: =49
             X: =545
@@ -136,9 +208,21 @@ Ecran_Catalog As screen:
             ZIndex: =9
 
         Icon4 As icon.ExpandView:
+            BorderColor: =RGBA(85, 106, 129, 1)
+            Color: =RGBA(0, 188, 242, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =38
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ExpandView
             OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large) And Navigate(Ecran_Zoom))
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: ="Mareste poza"
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
             Width: =36
@@ -148,6 +232,14 @@ Ecran_Catalog As screen:
 
     Label1 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =32
         OnSelect: =
         Size: =21
@@ -159,6 +251,14 @@ Ecran_Catalog As screen:
 
     Label1_1 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =32
         Size: =21
         Text: ="Brand"
@@ -168,15 +268,39 @@ Ecran_Catalog As screen:
         ZIndex: =6
 
     Rectangle3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 188, 242, 1)
+        FocusedBorderThickness: =4
         Height: =8
+        HoverFill: =RGBA(0, 188, 242, 1)
+        PressedFill: =RGBA(0, 188, 242, 1)
         Width: =640
         Y: =268
         ZIndex: =7
 
     AssetType As dropdown:
         AllowEmptySelection: =true
+        BorderColor: =RGBA(85, 106, 129, 1)
+        ChevronBackground: =RGBA(30, 45, 62, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(218, 218, 218, 1)
+        ChevronHoverBackground: =RGBA(67, 85, 106, 1)
+        ChevronHoverFill: =RGBA(218, 218, 218, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Default: =varType
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 45, 62, 1)
+        Font: =Font.'Segoe UI'
         Height: =33
+        HoverBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(67, 85, 106, 1)
         Items: |-
             =Sort(Distinct(Filter(catalogList,
                     Not(IsBlank(ThisRecord.Code)),
@@ -187,6 +311,15 @@ Ecran_Catalog As screen:
         OnChange: |-
             =Set(varType,AssetType.SelectedText.Value) And
             Reset(ListaMateriale)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedColor: =RGBA(30, 45, 62, 1)
+        PressedFill: =RGBA(0, 188, 242, 1)
+        SelectionColor: =RGBA(30, 45, 62, 1)
+        SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
         X: =28
@@ -195,6 +328,14 @@ Ecran_Catalog As screen:
 
     Label1_2 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =32
         OnSelect: =
         Size: =21
@@ -205,6 +346,14 @@ Ecran_Catalog As screen:
         ZIndex: =10
 
     Label4 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =34
         Size: =21
         Text: ="Nu s-au gasit materiale cu acest filtru."
@@ -216,6 +365,14 @@ Ecran_Catalog As screen:
 
     Label1_3 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =32
         OnSelect: =
         Size: =21
@@ -226,17 +383,31 @@ Ecran_Catalog As screen:
         ZIndex: =14
 
     TextInput1 As text:
+        BorderColor: =RGBA(85, 106, 129, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
         Default: =Blank()
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 45, 62, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Format: =TextFormat.Number
         Height: =33
         HintText: =""
+        HoverBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(30, 45, 62, 1)
         MaxLength: =6
-        OnChange: |-
-            =Set(varCategorie,Blank()) And
-            Set(varBrand,Blank()) And
-            Set(varType,Blank()) And
-            Set(varCod,TextInput1.Text)
-        Size: =14
+        OnChange: =Set(varCod,TextInput1.Text)
+        PressedBorderColor: =RGBA(0, 188, 242, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(30, 45, 62, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Width: =284
         X: =338
         Y: =170
