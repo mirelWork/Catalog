@@ -59,14 +59,14 @@ Ecran_Catalog As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
         TemplatePadding: =0
-        TemplateSize: =208
+        TemplateSize: =246
         Y: =276
         ZIndex: =3
 
         Title2 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -75,16 +75,16 @@ Ecran_Catalog As screen:
             Size: =24
             Text: =ThisItem.Code
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =86
-            Y: =53
+            Width: =209
+            X: =336
+            Y: =98
             ZIndex: =2
 
         Subtitle2 As label:
             Align: =Align.Center
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
             OnSelect: =Select(Parent)
+            Overflow: =Overflow.Scroll
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -93,7 +93,7 @@ Ecran_Catalog As screen:
             Text: =ThisItem.EnglishName
             VerticalAlign: =VerticalAlign.Top
             Width: =640
-            Y: =96
+            Y: =203
             ZIndex: =3
 
         Separator2 As rectangle:
@@ -101,7 +101,7 @@ Ecran_Catalog As screen:
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
-            Y: =200
+            Y: =238
             ZIndex: =5
 
         Rectangle2 As rectangle:
@@ -119,20 +119,19 @@ Ecran_Catalog As screen:
             OnSelect: =Set(varAdaugarePoza,ThisItem.Code) And Navigate(Ecran_AdaugarePoza)
             Tooltip: ="Adauga o poza"
             Width: =49
-            X: =542
-            Y: =78
+            X: =545
+            Y: =102
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
-            Height: =131
+            Height: =199
             HtmlText: |
                 ="<center>
-                <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=100 />
+                <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=175 />
                 </center>"
             OnSelect: =Select(Parent)
-            Width: =152
+            Width: =332
             X: =4
-            Y: =30
             ZIndex: =9
 
         Icon4 As icon.ExpandView:
@@ -142,8 +141,8 @@ Ecran_Catalog As screen:
             Tooltip: ="Mareste poza"
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
             Width: =36
-            X: =62
-            Y: =139
+            X: =302
+            Y: =152
             ZIndex: =10
 
     Label1 As label:
