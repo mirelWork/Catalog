@@ -1,11 +1,10 @@
 Screen1 As screen:
     BackgroundImage: =Picture1
-    Fill: =RGBA(30, 45, 62, 1)
     ImagePosition: =ImagePosition.Fill
-    LoadingSpinnerColor: =RGBA(0, 188, 242, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
     Icon3 As icon.Search:
-        BorderColor: =RGBA(85, 106, 129, 1)
+        BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(171, 136, 90, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
@@ -13,12 +12,12 @@ Screen1 As screen:
         FocusedBorderThickness: =4
         Height: =73
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.NextArrow
         OnSelect: =Navigate(Ecran_Catalog)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =69
         X: =522

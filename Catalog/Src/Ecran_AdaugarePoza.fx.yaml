@@ -1,6 +1,5 @@
 Ecran_AdaugarePoza As screen:
-    Fill: =RGBA(30, 45, 62, 1)
-    LoadingSpinnerColor: =RGBA(0, 188, 242, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: =
 
     AddMediaWithImage1 As group:
@@ -33,7 +32,6 @@ Ecran_AdaugarePoza As screen:
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
             ChangePictureText: ="Selecteaza Poza"
-            Color: =RGBA(30, 45, 62, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -42,13 +40,13 @@ Ecran_AdaugarePoza As screen:
             Font: =Font.'Segoe UI'
             Height: =67
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(30, 45, 62, 1)
-            HoverFill: =ColorFade(RGBA(0, 188, 242, 1), 10%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
             OnChange: =Button2.Visible=true
             OnSelect: =Button2.Visible=true
-            PressedBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 50%)
-            PressedColor: =RGBA(30, 45, 62, 1)
-            PressedFill: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             Size: =10
             Width: =640
             Y: =713
@@ -56,18 +54,17 @@ Ecran_AdaugarePoza As screen:
 
     Button2 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(30, 45, 62, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 188, 242, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         Height: =50
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(30, 45, 62, 1)
-        HoverFill: =ColorFade(RGBA(0, 188, 242, 1), 10%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
         OnSelect: |-
             =Set(varUserNick,UtilizatoriOffice365.MyProfileV2().mailNickname) And 
             Set(imageData,Last(Split(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),",")).Value) And
@@ -76,9 +73,9 @@ Ecran_AdaugarePoza As screen:
             Reset(AddMediaButton1) And
             Set(imageData,Blank()) And
             Set(base64Data,Blank()) And Navigate(Success)
-        PressedBorderColor: =ColorFade(RGBA(0, 188, 242, 1), 50%)
-        PressedColor: =RGBA(30, 45, 62, 1)
-        PressedFill: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -94,7 +91,7 @@ Ecran_AdaugarePoza As screen:
     Arrow1 As arrow.backArrow:
         BorderColor: =RGBA(0, 0, 0, 0)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(0, 188, 242, 1)
+        Fill: =RGBA(164, 38, 44, 1)
         Height: =41
         OnSelect: =Navigate(Ecran_Catalog)
         Width: =41
