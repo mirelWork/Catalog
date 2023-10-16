@@ -45,8 +45,8 @@ Ecran_Catalog As screen:
         SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
-        X: =28
-        Y: =92
+        X: =23
+        Y: =72
         ZIndex: =1
 
     Drop_Brand As dropdown:
@@ -91,8 +91,8 @@ Ecran_Catalog As screen:
         SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
-        X: =338
-        Y: =92
+        X: =333
+        Y: =72
         ZIndex: =2
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -107,7 +107,7 @@ Ecran_Catalog As screen:
                     //If(IsBlank(varGrup);true;Category=varGrup);
                     If(IsBlank(varCategorie),true,Categorie=varCategorie),
                     If(IsBlank(varType),true,'Tip Material'=varType),
-                    If(IsBlank(varCod),true,StartsWith(Code,varCod))),
+                    If(IsBlank(varCod),true,StartsWith(Code,varCod))),Code,
                 SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -245,8 +245,8 @@ Ecran_Catalog As screen:
         Size: =21
         Text: ="Categorie"
         Width: =284
-        X: =28
-        Y: =51
+        X: =23
+        Y: =31
         ZIndex: =5
 
     Label1_1 As label:
@@ -263,8 +263,8 @@ Ecran_Catalog As screen:
         Size: =21
         Text: ="Brand"
         Width: =277
-        X: =338
-        Y: =51
+        X: =333
+        Y: =31
         ZIndex: =6
 
     Rectangle3 As rectangle:
@@ -322,8 +322,8 @@ Ecran_Catalog As screen:
         SelectionFill: =RGBA(0, 188, 242, 1)
         Size: =14
         Width: =284
-        X: =28
-        Y: =170
+        X: =23
+        Y: =150
         ZIndex: =9
 
     Label1_2 As label:
@@ -341,8 +341,8 @@ Ecran_Catalog As screen:
         Size: =21
         Text: ="Tip"
         Width: =284
-        X: =28
-        Y: =132
+        X: =23
+        Y: =112
         ZIndex: =10
 
     Label4 As label:
@@ -354,12 +354,12 @@ Ecran_Catalog As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =34
+        Height: =38
         Size: =21
         Text: ="Nu s-au gasit materiale cu acest filtru."
         Visible: =IsEmpty(ListaMateriale.AllItems)
-        Width: =560
-        X: =40
+        Width: =547
+        X: =23
         Y: =230
         ZIndex: =13
 
@@ -378,8 +378,8 @@ Ecran_Catalog As screen:
         Size: =21
         Text: ="Cod Material"
         Width: =284
-        X: =331
-        Y: =132
+        X: =326
+        Y: =112
         ZIndex: =14
 
     TextInput1 As text:
@@ -409,7 +409,28 @@ Ecran_Catalog As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Width: =284
-        X: =338
-        Y: =170
+        X: =333
+        Y: =150
         ZIndex: =15
+
+    Icon1 As icon.FilterFlat:
+        BorderColor: =RGBA(85, 106, 129, 1)
+        Color: =RGBA(0, 188, 242, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.FilterFlat
+        OnSelect: =Set(varCategorie,Blank()) And Reset(Drop_Categorie) And Set(varBrand,Blank()) And Reset(Drop_Brand) And Set(varType,Blank()) And Reset(AssetType)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =47
+        X: =581
+        Y: =205
+        ZIndex: =16
 
