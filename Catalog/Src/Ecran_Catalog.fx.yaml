@@ -429,6 +429,7 @@ Ecran_Catalog As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(0, 188, 242, 1), 30%)
         PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Clear Filters"
         Width: =47
         X: =581
         Y: =205
