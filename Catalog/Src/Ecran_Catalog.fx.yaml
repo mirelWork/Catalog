@@ -104,7 +104,8 @@ Ecran_Catalog As screen:
                     //If(IsBlank(varGrup);true;Category=varGrup);
                     If(IsBlank(varCategorie),true,Categorie=varCategorie),
                     If(IsBlank(varType),true,'Tip Material'=varType),
-                    If(IsBlank(varCod),true,StartsWith(Code,varCod))),"Asociate",
+                    If(IsBlank(varCod),true,StartsWith(Code,varCod)),
+                    If(IsBlank(varName),true,Not(IsBlank(Find(Lower(varName),Lower(EnglishName)))))),"Asociate",
                 SortOrder.Ascending,"Code",
                 SortOrder.Ascending),Blank())
         Layout: =Layout.Vertical
@@ -435,4 +436,34 @@ Ecran_Catalog As screen:
         X: =581
         Y: =205
         ZIndex: =16
+
+    TextInput1_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =Blank()
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        HintText: =""
+        HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        MaxLength: =6
+        OnChange: =Set(varName,TextInput1_1.Text)
+        PressedBorderColor: =RGBA(164, 38, 44, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =515
+        X: =23
+        Y: =213
+        ZIndex: =17
 
