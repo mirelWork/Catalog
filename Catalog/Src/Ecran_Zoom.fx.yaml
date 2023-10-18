@@ -32,7 +32,7 @@
     FormViewer1 As formViewer:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =Catalog
-        Height: =221
+        Height: =263
         Item: =varSelectedItem
         NumberOfColumns: =1
         Width: =640
@@ -221,7 +221,7 @@
         Text: =Concat(ForAll( Filter(catalogList, Not(IsBlank(Asociate)),Asociate=varSelectedItem.Asociate,Code<>varSelectedItem.Code),Code),Value,", ")
         Width: =625
         X: =15
-        Y: =1009
+        Y: =1051
         ZIndex: =6
 
     Label2_1 As label:
@@ -240,6 +240,6 @@
             ="Materiale Asociate:"
         Width: =300
         X: =15
-        Y: =961
+        Y: =1003
         ZIndex: =7
 
