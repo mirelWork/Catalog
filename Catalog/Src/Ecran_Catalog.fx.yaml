@@ -28,7 +28,7 @@ Ecran_Catalog As screen:
                     Not(IsBlank(ThisRecord.EnglishName)),
                     Boolean(Status)=true,
                     If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varType),true,'Tip Material'=varType)),ThisRecord.Categorie)
+                    If(IsBlank(varType),true,Subcategorie=varType)),ThisRecord.Categorie)
         OnChange: |-
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
             If(AssetType.SelectedText.Value=varType,false,Set(varType,Blank())) And
@@ -44,7 +44,7 @@ Ecran_Catalog As screen:
         Size: =14
         Width: =284
         X: =23
-        Y: =72
+        Y: =56
         ZIndex: =1
 
     Drop_Brand As dropdown:
@@ -73,7 +73,7 @@ Ecran_Catalog As screen:
                     Not(IsBlank(ThisRecord.EnglishName)),
                     Boolean(Status)=true,        
                     If(IsBlank(varCategorie),true,Categorie=varCategorie),
-                    If(IsBlank(varType),true,'Tip Material'=varType)),ThisRecord.FinalBrand),Value,SortOrder.Ascending)
+                    If(IsBlank(varType),true,Subcategorie=varType)),ThisRecord.FinalBrand),Value,SortOrder.Ascending)
         OnChange: |-
             =Set(varBrand,Drop_Brand.SelectedText.Value)
             And
@@ -89,7 +89,7 @@ Ecran_Catalog As screen:
         Size: =14
         Width: =284
         X: =333
-        Y: =72
+        Y: =56
         ZIndex: =2
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -103,7 +103,7 @@ Ecran_Catalog As screen:
                     If(IsBlank(varBrand),true,FinalBrand=varBrand),
                     //If(IsBlank(varGrup);true;Category=varGrup);
                     If(IsBlank(varCategorie),true,Categorie=varCategorie),
-                    If(IsBlank(varType),true,'Tip Material'=varType),
+                    If(IsBlank(varType),true,Subcategorie=varType),
                     If(IsBlank(varCod),true,StartsWith(Code,varCod)),
                     If(IsBlank(varName),true,Not(IsBlank(Find(Lower(varName),Lower(EnglishName)))))),"Asociate",
                 SortOrder.Ascending,"Code",
@@ -122,7 +122,7 @@ Ecran_Catalog As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =42
+            Height: =38
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =12
@@ -131,8 +131,8 @@ Ecran_Catalog As screen:
             Size: =24
             Text: =ThisItem.Code
             VerticalAlign: =VerticalAlign.Top
-            Width: =209
-            X: =336
+            Width: =151
+            X: =382
             Y: =98
             ZIndex: =2
 
@@ -189,9 +189,9 @@ Ecran_Catalog As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Tooltip: ="Adauga o poza"
+            Tooltip: ="Propune o poza noua"
             Width: =49
-            X: =545
+            X: =565
             Y: =102
             ZIndex: =8
 
@@ -202,7 +202,7 @@ Ecran_Catalog As screen:
                 <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=175 />
                 </center>"
             OnSelect: =Select(Parent)
-            Width: =332
+            Width: =378
             X: =4
             ZIndex: =9
 
@@ -230,7 +230,6 @@ Ecran_Catalog As screen:
             ZIndex: =10
 
     Label1 As label:
-        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -240,17 +239,16 @@ Ecran_Catalog As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =37
         OnSelect: =
-        Size: =21
+        Size: =18
         Text: ="Categorie"
         Width: =284
         X: =23
-        Y: =22
+        Y: =10
         ZIndex: =5
 
     Label1_1 As label:
-        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -260,12 +258,12 @@ Ecran_Catalog As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
-        Size: =21
+        Height: =37
+        Size: =18
         Text: ="Brand"
         Width: =277
         X: =333
-        Y: =22
+        Y: =10
         ZIndex: =6
 
     Rectangle3 As rectangle:
@@ -308,7 +306,7 @@ Ecran_Catalog As screen:
                     Not(IsBlank(ThisRecord.EnglishName)),
                     Boolean(Status)=true,
                     If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varCategorie),true,Categorie=varCategorie)),ThisRecord.'Tip Material'),Value,SortOrder.Ascending)
+                    If(IsBlank(varCategorie),true,Categorie=varCategorie)),ThisRecord.Subcategorie),Value,SortOrder.Ascending)
         OnChange: |-
             =Set(varType,AssetType.SelectedText.Value) And
             Reset(ListaMateriale)
@@ -323,11 +321,10 @@ Ecran_Catalog As screen:
         Size: =14
         Width: =284
         X: =23
-        Y: =150
+        Y: =135
         ZIndex: =9
 
     Label1_2 As label:
-        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -337,13 +334,13 @@ Ecran_Catalog As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =32
+        Height: =28
         OnSelect: =
-        Size: =21
+        Size: =18
         Text: ="Tip"
         Width: =284
         X: =23
-        Y: =112
+        Y: =98
         ZIndex: =10
 
     Label4 As label:
@@ -365,7 +362,6 @@ Ecran_Catalog As screen:
         ZIndex: =13
 
     Label1_3 As label:
-        Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -375,20 +371,20 @@ Ecran_Catalog As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =32
+        Height: =28
         OnSelect: =
-        Size: =21
+        Size: =18
         Text: ="Cod Material"
-        Width: =284
-        X: =326
-        Y: =112
+        Width: =277
+        X: =333
+        Y: =98
         ZIndex: =14
 
     TextInput1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
-        Default: =Blank()
+        Default: =varCod
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -412,7 +408,7 @@ Ecran_Catalog As screen:
         RadiusTopRight: =0
         Width: =284
         X: =333
-        Y: =150
+        Y: =135
         ZIndex: =15
 
     Icon1 As icon.FilterFlat:
@@ -427,28 +423,27 @@ Ecran_Catalog As screen:
         HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.FilterFlat
-        OnSelect: =Set(varCategorie,Blank()) And Reset(Drop_Categorie) And Set(varBrand,Blank()) And Reset(Drop_Brand) And Set(varType,Blank()) And Reset(AssetType)
+        OnSelect: =Set(varCategorie,Blank()) And Reset(Drop_Categorie) And Set(varBrand,Blank()) And Reset(Drop_Brand) And Set(varType,Blank()) And Reset(AssetType) And Set(varCod,Blank()) And Reset(TextInput1) And Set(varName,Blank()) And Reset(TextInput1_1)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Tooltip: ="Clear Filters"
         Width: =47
         X: =581
-        Y: =205
+        Y: =186
         ZIndex: =16
 
     TextInput1_1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
-        Default: =Blank()
+        Default: =varName
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =32
         HintText: =""
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -464,6 +459,6 @@ Ecran_Catalog As screen:
         RadiusTopRight: =0
         Width: =515
         X: =23
-        Y: =213
+        Y: =186
         ZIndex: =17
 

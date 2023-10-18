@@ -14,7 +14,7 @@
         Image: =marire
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =Parent.Width
+        Width: =640
         Y: =68
         ZIndex: =2
 
