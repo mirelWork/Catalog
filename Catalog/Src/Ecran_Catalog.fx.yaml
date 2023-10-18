@@ -204,7 +204,8 @@ Ecran_Catalog As screen:
                 </center>"
             OnSelect: =Select(Parent)
             Width: =338
-            X: =227
+            X: =191
+            Y: =8
             ZIndex: =9
 
         Icon4 As icon.ExpandView:
@@ -226,8 +227,8 @@ Ecran_Catalog As screen:
             Tooltip: ="Mareste poza"
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
             Width: =36
-            X: =529
-            Y: =157
+            X: =493
+            Y: =165
             ZIndex: =10
 
         Label3 As label:
@@ -245,7 +246,9 @@ Ecran_Catalog As screen:
             Text: |-
                 ="Materiale similare: "&Concat(ForAll( Filter(catalogList, Not(IsBlank(Asociate)),Asociate=ThisItem.Asociate,Code<>ThisItem.Code),Code),Value,", ")
             VerticalAlign: =VerticalAlign.Top
-            Width: =203
+            Visible: |-
+                =Len(Label3.Text)>Len("Materiale similare: ")
+            Width: =167
             X: =24
             Y: =77
             ZIndex: =11
@@ -262,7 +265,7 @@ Ecran_Catalog As screen:
         FontWeight: =FontWeight.Bold
         Height: =37
         OnSelect: =
-        Size: =18
+        Size: =16
         Text: ="Categorie"
         Width: =284
         X: =23
@@ -280,7 +283,7 @@ Ecran_Catalog As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =37
-        Size: =18
+        Size: =16
         Text: ="Brand"
         Width: =277
         X: =333
@@ -357,7 +360,7 @@ Ecran_Catalog As screen:
         FontWeight: =FontWeight.Bold
         Height: =28
         OnSelect: =
-        Size: =18
+        Size: =16
         Text: ="Tip"
         Width: =284
         X: =23
@@ -394,7 +397,7 @@ Ecran_Catalog As screen:
         FontWeight: =FontWeight.Bold
         Height: =28
         OnSelect: =
-        Size: =18
+        Size: =16
         Text: ="Cod Material"
         Width: =277
         X: =333
