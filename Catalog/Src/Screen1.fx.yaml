@@ -15,7 +15,9 @@ Screen1 As screen:
         HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.NextArrow
-        OnSelect: =Navigate(Ecran_Catalog)
+        OnSelect: |-
+            =Set(catalogList,Filter(Catalog,Not(IsMatch(Categorie,"#N/A")))) And
+            Set(fileList,'Documente INDICATORI') And Navigate(Ecran_Catalog)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)

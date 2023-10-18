@@ -32,7 +32,7 @@
     FormViewer1 As formViewer:
         BorderColor: =RGBA(166, 166, 166, 1)
         DataSource: =Catalog
-        Height: =394
+        Height: =221
         Item: =varSelectedItem
         NumberOfColumns: =1
         Width: =640
@@ -112,7 +112,6 @@
             ZIndex: =1
 
             DataCardKey2 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -122,14 +121,13 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
+                Height: =47
                 PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =170
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue2 As label:
@@ -142,33 +140,33 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =38
+                Height: =30
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
                 Text: =Parent.Default
-                Width: =296
-                X: =215
-                Y: =14
+                Width: =300
+                X: =200
+                Y: =17
                 ZIndex: =2
 
-        Categorie_DataCard1 As typedDataCard.textualViewCard:
+        Category_DataCard1 As typedDataCard.textualViewCard:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Categorie"
-            Default: =ThisItem.Categorie
+            DataField: ="Category"
+            Default: =ThisItem.Category
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"Categorie")
+            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"Category")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =77
+            Height: =40
             Required: =false
             Width: =640
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardKey6 As label:
+            DataCardKey1 As label:
                 AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -179,17 +177,16 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
                 PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =170
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =2
                 ZIndex: =1
 
-            DataCardValue6 As label:
+            DataCardValue1 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -199,133 +196,18 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =47
+                Height: =30
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
                 Text: =Parent.Default
-                Width: =446
-                X: =192
-                Y: =10
-                ZIndex: =2
-
-        FinalBrand_DataCard1 As typedDataCard.textualViewCard:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="FinalBrand"
-            Default: =ThisItem.FinalBrand
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"FinalBrand")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey4 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =48
-                PaddingLeft: =0
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue4 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
-                ZIndex: =2
-
-        "'Tip Material_DataCard1' As typedDataCard.textualViewCard":
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Tip Material"
-            Default: =ThisItem.'Tip Material'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"Tip Material")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            DataCardKey5 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =48
-                PaddingLeft: =0
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As label:
-                AutoHeight: =true
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisplayMode: =Parent.DisplayMode
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                Width: =372
+                X: =200
+                Y: =17
                 ZIndex: =2
 
     Label2 As label:
-        AutoHeight: =true
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
@@ -334,12 +216,12 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =115
+        Height: =37
         Size: =21
-        Text: =Concat(ForAll( Filter(catalogList, Not(IsBlank(Asociate)),Asociate=varSelectedItem.Asociate),Code),Value,", ")
-        Width: =301
-        X: =339
-        Y: =1041
+        Text: =Concat(ForAll( Filter(catalogList, Not(IsBlank(Asociate)),Asociate=varSelectedItem.Asociate,Code<>varSelectedItem.Code),Code),Value,", ")
+        Width: =625
+        X: =15
+        Y: =1009
         ZIndex: =6
 
     Label2_1 As label:
@@ -357,7 +239,7 @@
         Text: |-
             ="Materiale Asociate:"
         Width: =300
-        X: =339
-        Y: =993
+        X: =15
+        Y: =961
         ZIndex: =7
 

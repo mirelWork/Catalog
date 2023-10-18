@@ -1,8 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =Set(catalogList,Filter(Catalog,Not(IsMatch(Categorie,"#N/A")))) And
-        Set(fileList,'Documente INDICATORI')
+    OnStart: =false
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
