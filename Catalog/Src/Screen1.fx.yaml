@@ -3,6 +3,24 @@ Screen1 As screen:
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
+    Image2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =320
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Picture9_1
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =320
+        X: =161
+        Y: =292
+        ZIndex: =1
+
     Icon3 As icon.Search:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(171, 136, 90, 1)
@@ -24,7 +42,7 @@ Screen1 As screen:
         Width: =69
         X: =522
         Y: =1011
-        ZIndex: =1
+        ZIndex: =2
 
     "'Logo ursus' As image":
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -43,7 +61,7 @@ Screen1 As screen:
         Width: =638
         X: =2
         Y: =354
-        ZIndex: =2
+        ZIndex: =3
 
     Image3 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -55,11 +73,29 @@ Screen1 As screen:
         Height: =177
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =fabrica
+        Image: =Picture4
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =178
-        X: =54
-        Y: =45
-        ZIndex: =3
+        X: =80
+        Y: =856
+        ZIndex: =4
+
+    Image1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =194
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Picture1_1
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =210
+        X: =430
+        Y: =6
+        ZIndex: =5
 
