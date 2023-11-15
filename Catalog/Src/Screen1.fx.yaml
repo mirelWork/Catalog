@@ -57,7 +57,7 @@ Screen1 As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =477
-        X: =81
-        Y: =615
+        X: =72
+        Y: =616
         ZIndex: =6
 

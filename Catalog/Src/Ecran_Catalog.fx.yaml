@@ -493,7 +493,7 @@ Ecran_Catalog As screen:
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =24
+        Height: =18
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverFill: =RGBA(0, 0, 0, 0)
@@ -503,6 +503,6 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =18
         X: =610
-        Y: =202
+        Y: =206
         ZIndex: =18
 
