@@ -232,7 +232,7 @@ Ecran_Catalog As screen:
                 ="<center>
                 <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=175 />
                 </center>"
-            OnSelect: =Refresh('Documente INDICATORI')
+            OnSelect: =Refresh(Aplicatii)
             Width: =338
             X: =191
             Y: =8

@@ -30,26 +30,17 @@
       "Editor": "Modificat de",
       "Editor#Claims": "Modificat de Claims",
       "ID": "ID",
-      "MediaServiceImageTags": "Etichete imagine",
-      "MediaServiceImageTags#WssId": "Etichete imagine WssId",
-      "MediaServiceImageTags@odata.type": "MediaServiceImageTags (MediaServiceImageTags@odata.type)",
-      "MediaServiceLocation": "Location",
-      "MediaServiceOCR": "Extracted Text",
       "Modified": "Modificat",
       "OData__ColorTag": "Etichetă de culoare",
       "OData__DisplayName": "Confidențialitate",
       "OData__ExtendedDescription": "Descriere",
-      "SharedWithDetails": "Partajat cu detalii",
-      "SharedWithUsers": "Partajat cu",
-      "SharedWithUsers#Claims": "Partajat cu Claims",
-      "SharedWithUsers@odata.type": "SharedWithUsers (SharedWithUsers@odata.type)",
       "Title": "Titlu"
     },
     "DatasetName": "https://abeurope.sharepoint.com/sites/rodepartments/SD/Development",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Documente INDICATORI",
+    "Name": "Aplicatii",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

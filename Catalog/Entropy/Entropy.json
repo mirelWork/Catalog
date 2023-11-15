@@ -64,13 +64,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/15/2023 14:53:59",
+  "HeaderLastSavedDateTimeUTC": "11/15/2023 15:10:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0f84ed25-278c-4720-952d-7b5557a5d6ef": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9ad7636121d249f5b345a17d2c634dd3\"",
+    "5426a4ed-687a-41ca-bc91-c05e135d4812": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\"",
     "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\"",
-    "9b19e522-c8b1-4e4c-89da-fc83b09d3fa8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/c3cd4aaa73574a8a8ba0bc6e852e8674-d3a40745bfb64a70\"",
-    "b3b58ac2-689f-4198-a747-acd492e000e5": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\""
+    "6ab2d09e-098f-4392-962d-3173fdb85a84": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/C3CD4AAA73574A8A8BA0BC6E852E8674-D3A40745BFB64A70\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -121,11 +121,11 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "Aplicatii": 4,
     "Catalog": 1,
     "catalogList": 8,
     "ComboBoxSample": 2,
     "CustomGallerySample": 3,
-    "Documente INDICATORI": 4,
     "DropDownSample": 5,
     "fileList": 9,
     "ListboxSample": 6,
