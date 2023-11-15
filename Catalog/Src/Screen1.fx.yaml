@@ -72,13 +72,13 @@ Screen1 As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =293
+        Height: =221
         Size: =50
         Text: |-
             ="Catalog Asseturi
             "
-        Width: =535
-        X: =68
-        Y: =231
+        Width: =523
+        X: =59
+        Y: =268
         ZIndex: =7
 
