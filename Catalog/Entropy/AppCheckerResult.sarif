@@ -26,7 +26,7 @@
                   "charLength": 30,
                   "charOffset": 31,
                   "snippet": {
-                    "text": "Not(IsMatch(Categorie,\"#N/A\"))"
+                    "text": "Not(IsMatch(Categorie;\"#N/A\"))"
                   }
                 }
               },
@@ -48,66 +48,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Ecran_Zoom",
-                "type": "Ecran_Zoom.Arrow1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Ecran_Zoom",
-                "type": "Ecran_Zoom.Arrow1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -654,6 +594,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Ecran_Zoom",
+                "type": "Ecran_Zoom.Arrow1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Ecran_Zoom.Arrow1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Ecran_Zoom",
+                "type": "Ecran_Zoom.Arrow1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen1"
                 }
               ],
@@ -997,34 +997,34 @@
               "id": "app-UnusedMediaResources",
               "messageStrings": {
                 "issue": {
-                  "text": "Unused media files"
+                  "text": "Fișiere media neutilizate"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove the unused media file in the Media pane."
+                  "Eliminați fișierul media neutilizat din panoul media."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+                "whyFix": "LA acest fișier media nu se face referire în nicio formulă de control, astfel încât nu este necesar. Eliminarea acestuia va îmbunătăți performanța."
               }
             },
             {
               "id": "app-DataSourceDefaultMaxRowsLimit",
               "messageStrings": {
                 "issue": {
-                  "text": "Data row limit for non-delegable queries is more than 500"
+                  "text": "Limita de rânduri de date pentru interogările ce nu se pot delega este mai mare decât 500"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Update 'Data row limit for non-delegable queries' in the advanced app settings."
+                  "Actualizați „Limita de rânduri de date pentru interogări ce nu se pot delega” în setările de aplicație complexe."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "A 'data row limit' more than 500 may result in a slower app when running non-delegable queries, because the app will have to process every row itself, rather than running the query on the server."
+                "whyFix": "O „limită privind rândurile de date” mai mare decât 500 poate duce la o aplicație mai lentă atunci când rulează interogări nedelegabile, deoarece aplicația va trebui să proceseze fiecare rând în sine, în loc să ruleze interogarea pe server."
               }
             }
           ],
