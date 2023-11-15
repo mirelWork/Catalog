@@ -67,14 +67,12 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
                 PaddingLeft: =0
                 Size: =fontSize
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.3
+                Width: =(Parent.Width - 60) * 0.35
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue3.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue3 As label:
@@ -88,14 +86,12 @@
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                Height: =30
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
                 Size: =fontSize
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey3.X + DataCardKey3.Width
-                Y: =10
                 ZIndex: =2
 
         Code_DataCard1 As typedDataCard.textualViewCard:
@@ -123,12 +119,11 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: |
-                    =30
+                Height: =42
                 PaddingLeft: =0
                 Size: =fontSize
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.3
+                Width: =(Parent.Width - 60) * 0.35
                 Wrap: =false
                 X: =30
                 Y: |
@@ -136,6 +131,7 @@
                 ZIndex: =1
 
             DataCardValue2 As label:
+                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -184,7 +180,7 @@
                 PaddingLeft: =0
                 Size: =fontSize
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.3
+                Width: =(Parent.Width - 60) * 0.35
                 Wrap: =false
                 X: =30
                 Y: |
@@ -192,6 +188,7 @@
                 ZIndex: =1
 
             DataCardValue1 As label:
+                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -240,10 +237,9 @@
                 PaddingLeft: =0
                 Size: =fontSize
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.3
+                Width: =(Parent.Width - 60) * 0.35
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue4.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue4 As label:
@@ -258,13 +254,10 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
                 Size: =fontSize
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey4.X + DataCardKey4.Width
-                Y: =10
                 ZIndex: =2
 
     Label2 As label:
@@ -294,7 +287,7 @@
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =48
+        Height: =42
         Size: =fontSize
         Text: |-
             ="Materiale Asociate:"
