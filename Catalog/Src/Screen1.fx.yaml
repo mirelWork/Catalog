@@ -82,3 +82,38 @@ Screen1 As screen:
         Y: =268
         ZIndex: =7
 
+    Label7 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =58
+        Size: =20
+        Text: ="Sales Development"
+        Width: =254
+        X: =16
+        Y: =1026
+        ZIndex: =8
+
+    Label8 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =15
+        Text: ="Create by"
+        Width: =98
+        X: =16
+        Y: =984
+        ZIndex: =9
+
