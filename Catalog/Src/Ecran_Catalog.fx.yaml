@@ -504,7 +504,7 @@ Ecran_Catalog As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =515
+        Width: =449
         X: =23
         Y: =186
         ZIndex: =12
@@ -550,4 +550,26 @@ Ecran_Catalog As screen:
         X: =581
         Y: =186
         ZIndex: =14
+
+    Icon6 As icon.ArrowUp:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(164, 38, 44, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.ArrowUp
+        OnSelect: =Reset(ListaMateriale)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Go Top"
+        Width: =47
+        X: =534
+        Y: =1083
+        ZIndex: =15
 
