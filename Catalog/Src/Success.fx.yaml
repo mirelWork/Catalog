@@ -46,7 +46,7 @@
         FontWeight: =FontWeight.Bold
         Height: =iconCircle2.Height
         Size: =21
-        Text: ="S-a finalizat cu succes"
+        Text: ="Incarcarea pozei s-a finalizat cu succes"
         Width: =Parent.Width * 0.75
         X: =Parent.Width/2 - Self.Width/2
         Y: =iconCheck2.Y + iconCheck2.Height + 100
