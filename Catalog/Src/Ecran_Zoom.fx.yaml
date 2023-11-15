@@ -234,6 +234,7 @@
         Size: =fontSize
         Text: |-
             ="Materiale Asociate:"
+        Visible: =!IsBlank(Label2)
         Width: =300
         X: =15
         Y: =1003
