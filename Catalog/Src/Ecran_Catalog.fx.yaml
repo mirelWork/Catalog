@@ -46,8 +46,8 @@ Ecran_Catalog As screen:
             )
         OnChange: |-
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
-            If(AssetType.SelectedText.Value=varType,false,Set(varType,Blank())) And
-            Reset(ListaMateriale)
+            If(AssetType.SelectedText.Value=varType,false,Set(varType,Blank()))
+        OnSelect: =Reset(ListaMateriale)
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5
@@ -104,10 +104,8 @@ Ecran_Catalog As screen:
                 Value,
                 SortOrder.Ascending
             )
-        OnChange: |-
-            =Set(varBrand,Drop_Brand.SelectedText.Value)
-            And
-            Reset(ListaMateriale)
+        OnChange: =Set(varBrand,Drop_Brand.SelectedText.Value)
+        OnSelect: =Reset(ListaMateriale)
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5
@@ -216,7 +214,8 @@ Ecran_Catalog As screen:
             HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Add
-            OnSelect: =Set(varAdaugarePoza,ThisItem.Code) And Navigate(Ecran_AdaugarePoza)
+            OnSelect: |-
+                =Navigate(Ecran_AdaugarePoza,Transition.None,{varAdaugarePoza:ThisItem.Code,base64Data:Blank(),imageData:Blank()})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -251,7 +250,8 @@ Ecran_Catalog As screen:
             HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ExpandView
-            OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Set(marire,First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large) And Set(varSelectedItem,ThisItem) And Navigate(Ecran_Zoom))
+            OnSelect: |-
+                =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Navigate(Ecran_Zoom,Transition.None,{marire:First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large,varSelectedItem:ThisItem}),false)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -377,9 +377,8 @@ Ecran_Catalog As screen:
                 Value,
                 SortOrder.Ascending
             )
-        OnChange: |-
-            =Set(varType,AssetType.SelectedText.Value) And
-            Reset(ListaMateriale)
+        OnChange: =Set(varType,AssetType.SelectedText.Value)
+        OnSelect: =Reset(ListaMateriale)
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5

@@ -1296,36 +1296,6 @@
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Ecran_AdaugarePoza.user"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Ecran_AdaugarePoza.user",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "user",
-                "module": "Ecran_AdaugarePoza",
-                "type": "Ecran_AdaugarePoza"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -1433,23 +1403,6 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "O „limită privind rândurile de date” mai mare decât 500 poate duce la o aplicație mai lentă atunci când rulează interogări nedelegabile, deoarece aplicația va trebui să proceseze fiecare rând în sine, în loc să ruleze interogarea pe server."
-              }
-            },
-            {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Variabilă neutilizată"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Eliminați variabila neutilizată."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Această variabilă este declarată, dar nu este menționată de niciun control, așa că nu este necesară."
               }
             }
           ],

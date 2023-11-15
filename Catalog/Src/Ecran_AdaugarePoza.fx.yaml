@@ -1,7 +1,6 @@
 Ecran_AdaugarePoza As screen:
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
-    OnVisible: |-
-        =UpdateContext({user:User().FullName})
+    OnVisible: =
 
     AddMediaWithImage1 As group:
         Height: =5
@@ -67,13 +66,11 @@ Ecran_AdaugarePoza As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
         OnSelect: |-
-            =Set(varUserNick, UtilizatoriOffice365.MyProfileV2().mailNickname) And 
-            Set(imageData,Last(Split(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),",")).Value) And
-            Set(base64Data, Left(imageData,Len(imageData)-1)) And
-            Salvarepoza.Run(varAdaugarePoza,varUserNick,base64Data) And
+            =UpdateContext({imageData:Last(Split(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),",")).Value}) And
+            UpdateContext({base64Data: Left(imageData,Len(imageData)-1)}) And
+            Salvarepoza.Run(varAdaugarePoza,User().FullName,base64Data) And
             Reset(AddMediaButton1) And
-            Set(imageData,Blank()) And
-            Set(base64Data,Blank()) And Navigate(Success)
+            Navigate(Success)
         PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)

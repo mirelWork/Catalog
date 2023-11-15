@@ -64,14 +64,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/15/2023 14:37:53",
+  "HeaderLastSavedDateTimeUTC": "11/15/2023 14:53:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "0c4f2606-e56a-44a9-81b1-3f72cec3f525": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/c3cd4aaa73574a8a8ba0bc6e852e8674-d3a40745bfb64a70\"",
     "0f84ed25-278c-4720-952d-7b5557a5d6ef": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9ad7636121d249f5b345a17d2c634dd3\"",
-    "39292e1e-d9dc-43df-a13a-0af3cbcc3208": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5119790fdd1d47c4a7acb3f757c88389\"",
     "5d7fdb37-ae06-476c-b42d-42031ce252bd": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-9f2e2ac0-fcdd-4de3-bb85-36dd-b1625167\"",
-    "deb094ca-a905-4577-b1e4-5746e8d2468f": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\""
+    "9b19e522-c8b1-4e4c-89da-fc83b09d3fa8": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/c3cd4aaa73574a8a8ba0bc6e852e8674-d3a40745bfb64a70\"",
+    "b3b58ac2-689f-4198-a747-acd492e000e5": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/be4ab2aa1a7f493485f8a62160ee655b\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -122,17 +121,16 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
-    "Catalog": 2,
-    "catalogList": 9,
-    "ComboBoxSample": 3,
-    "CustomGallerySample": 4,
-    "Documente INDICATORI": 5,
-    "DropDownSample": 6,
-    "fileList": 10,
-    "ListboxSample": 7,
+    "Catalog": 1,
+    "catalogList": 8,
+    "ComboBoxSample": 2,
+    "CustomGallerySample": 3,
+    "Documente INDICATORI": 4,
+    "DropDownSample": 5,
+    "fileList": 9,
+    "ListboxSample": 6,
     "Salvarepoza": 0,
-    "Uploads": 8,
-    "UtilizatoriOffice365": 1
+    "Uploads": 7
   },
   "OrderGroupControls": {
     "AddMediaWithImage1": {
