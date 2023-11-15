@@ -23,12 +23,27 @@ Ecran_Catalog As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: |-
-            =Distinct(Filter(Sort(catalogList,SortCategorie,SortOrder.Ascending),
-                    Not(IsBlank(ThisRecord.Code)),
-                    Not(IsBlank(ThisRecord.EnglishName)),
-                    Boolean(Status)=true,
-                    If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varType),true,Subcategorie=varType)),ThisRecord.Categorie)
+            =Distinct(
+                Filter(
+                    Sort(
+                        catalogList,
+                        SortCategorie,
+                        SortOrder.Ascending
+                    ),
+                    Boolean(Status) = true,
+                    If(
+                        IsBlank(varBrand),
+                        true,
+                        FinalBrand = varBrand
+                    ),
+                    If(
+                        IsBlank(varType),
+                        true,
+                        Subcategorie = varType
+                    )
+                ),
+                ThisRecord.Categorie
+            )
         OnChange: |-
             =Set(varCategorie,Drop_Categorie.SelectedText.Value) And
             If(AssetType.SelectedText.Value=varType,false,Set(varType,Blank())) And
@@ -42,7 +57,7 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(164, 38, 44, 1)
         SelectionFill: =RGBA(164, 38, 44, 1)
         Size: =14
-        Width: =284
+        Width: =Parent.Width*0.42
         X: =23
         Y: =56
         ZIndex: =1
@@ -68,12 +83,27 @@ Ecran_Catalog As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: |-
-            =Sort(Distinct(Filter(catalogList,
-                    Not(IsBlank(ThisRecord.Code)),
-                    Not(IsBlank(ThisRecord.EnglishName)),
-                    Boolean(Status)=true,        
-                    If(IsBlank(varCategorie),true,Categorie=varCategorie),
-                    If(IsBlank(varType),true,Subcategorie=varType)),ThisRecord.FinalBrand),Value,SortOrder.Ascending)
+            =Sort(
+                Distinct(
+                    Filter(
+                        catalogList,
+                        Boolean(Status) = true,
+                        If(
+                            IsBlank(varCategorie),
+                            true,
+                            Categorie = varCategorie
+                        ),
+                        If(
+                            IsBlank(varType),
+                            true,
+                            Subcategorie = varType
+                        )
+                    ),
+                    ThisRecord.FinalBrand
+                ),
+                Value,
+                SortOrder.Ascending
+            )
         OnChange: |-
             =Set(varBrand,Drop_Brand.SelectedText.Value)
             And
@@ -87,7 +117,7 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(164, 38, 44, 1)
         SelectionFill: =RGBA(164, 38, 44, 1)
         Size: =14
-        Width: =284
+        Width: =Parent.Width*0.42
         X: =333
         Y: =56
         ZIndex: =2
@@ -197,6 +227,7 @@ Ecran_Catalog As screen:
             ZIndex: =8
 
         HtmlText1 As htmlViewer:
+            DisplayMode: =DisplayMode.View
             Height: =195
             HtmlText: |
                 ="<center>
@@ -270,7 +301,7 @@ Ecran_Catalog As screen:
         Width: =284
         X: =23
         Y: =10
-        ZIndex: =5
+        ZIndex: =4
 
     Label1_1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -288,7 +319,7 @@ Ecran_Catalog As screen:
         Width: =277
         X: =333
         Y: =10
-        ZIndex: =6
+        ZIndex: =5
 
     Rectangle3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -302,7 +333,7 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(164, 38, 44, 1)
         Width: =640
         Y: =268
-        ZIndex: =7
+        ZIndex: =6
 
     AssetType As dropdown:
         AllowEmptySelection: =true
@@ -325,12 +356,27 @@ Ecran_Catalog As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: |-
-            =Sort(Distinct(Filter(catalogList,
-                    Not(IsBlank(ThisRecord.Code)),
-                    Not(IsBlank(ThisRecord.EnglishName)),
-                    Boolean(Status)=true,
-                    If(IsBlank(varBrand),true,FinalBrand=varBrand),
-                    If(IsBlank(varCategorie),true,Categorie=varCategorie)),ThisRecord.Subcategorie),Value,SortOrder.Ascending)
+            =Sort(
+                Distinct(
+                    Filter(
+                        catalogList,
+                        Boolean(Status) = true,
+                        If(
+                            IsBlank(varBrand),
+                            true,
+                            FinalBrand = varBrand
+                        ),
+                        If(
+                            IsBlank(varCategorie),
+                            true,
+                            Categorie = varCategorie
+                        )
+                    ),
+                    ThisRecord.Subcategorie
+                ),
+                Value,
+                SortOrder.Ascending
+            )
         OnChange: |-
             =Set(varType,AssetType.SelectedText.Value) And
             Reset(ListaMateriale)
@@ -343,10 +389,10 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(164, 38, 44, 1)
         SelectionFill: =RGBA(164, 38, 44, 1)
         Size: =14
-        Width: =284
+        Width: =Parent.Width*0.42
         X: =23
         Y: =135
-        ZIndex: =9
+        ZIndex: =7
 
     Label1_2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -365,7 +411,7 @@ Ecran_Catalog As screen:
         Width: =284
         X: =23
         Y: =98
-        ZIndex: =10
+        ZIndex: =8
 
     Label4 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -383,7 +429,7 @@ Ecran_Catalog As screen:
         Width: =547
         X: =23
         Y: =230
-        ZIndex: =13
+        ZIndex: =9
 
     Label1_3 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -402,7 +448,7 @@ Ecran_Catalog As screen:
         Width: =277
         X: =333
         Y: =98
-        ZIndex: =14
+        ZIndex: =10
 
     TextInput1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -422,7 +468,7 @@ Ecran_Catalog As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         MaxLength: =6
-        OnChange: =Set(varCod,TextInput1.Text)
+        OnChange: =Set(varCod,TextInput1.Text) And Reset(ListaMateriale)
         PressedBorderColor: =RGBA(164, 38, 44, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
@@ -430,32 +476,10 @@ Ecran_Catalog As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =284
+        Width: =Parent.Width*0.42
         X: =333
         Y: =135
-        ZIndex: =15
-
-    Icon1 As icon.FilterFlat:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(164, 38, 44, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =40
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.FilterFlat
-        OnSelect: =Set(varCategorie,Blank()) And Reset(Drop_Categorie) And Set(varBrand,Blank()) And Reset(Drop_Brand) And Set(varType,Blank()) And Reset(AssetType) And Set(varCod,Blank()) And Reset(TextInput1) And Set(varName,Blank()) And Reset(TextInput1_1)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Tooltip: ="Clear Filters"
-        Width: =47
-        X: =581
-        Y: =186
-        ZIndex: =16
+        ZIndex: =11
 
     TextInput1_1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -484,7 +508,7 @@ Ecran_Catalog As screen:
         Width: =515
         X: =23
         Y: =186
-        ZIndex: =17
+        ZIndex: =12
 
     Icon5 As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -504,5 +528,27 @@ Ecran_Catalog As screen:
         Width: =18
         X: =610
         Y: =206
-        ZIndex: =18
+        ZIndex: =13
+
+    Icon1 As icon.FilterFlat:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(164, 38, 44, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.FilterFlat
+        OnSelect: =Set(varCategorie,Blank()) And Reset(Drop_Categorie) And Set(varBrand,Blank()) And Reset(Drop_Brand) And Set(varType,Blank()) And Reset(AssetType) And Set(varCod,Blank()) And Reset(TextInput1) And Set(varName,Blank()) And Reset(TextInput1_1)And Reset(ListaMateriale)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: ="Clear Filters"
+        Width: =47
+        X: =581
+        Y: =186
+        ZIndex: =14
 
