@@ -66,11 +66,30 @@ Ecran_AdaugarePoza As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
         OnSelect: |-
-            =UpdateContext({imageData:Last(Split(JSON(UploadedImage1.Image,JSONFormat.IncludeBinaryData),",")).Value}) And
-            UpdateContext({base64Data: Left(imageData,Len(imageData)-1)}) And
-            Salvarepoza.Run(varAdaugarePoza,User().FullName,base64Data) And
-            Reset(AddMediaButton1) And
-            Navigate(Success)
+            =UpdateContext(
+                {
+                    imageData: Last(
+                        Split(
+                            JSON(
+                                UploadedImage1.Image,
+                                JSONFormat.IncludeBinaryData
+                            ),
+                            ","
+                        )
+                    ).Value
+                }
+            ) And UpdateContext(
+                {
+                    base64Data: Left(
+                        imageData,
+                        Len(imageData) - 1
+                    )
+                }
+            ) And Salvarepoza.Run(
+                varAdaugarePoza,
+                User().FullName,
+                base64Data
+            ) And Reset(AddMediaButton1) And Navigate(Success)
         PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
