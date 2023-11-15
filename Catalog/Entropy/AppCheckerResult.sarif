@@ -1163,6 +1163,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.fundal prima poza"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.fundal prima poza",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "fundal prima poza",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
