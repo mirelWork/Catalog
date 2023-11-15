@@ -18,7 +18,7 @@ Screen1 As screen:
         OnSelect: |-
             =ClearCollect(catalogList,Catalog) ; 
             ClearCollect(catalogList,Filter(catalogList,Not(IsMatch(Categorie,"#N/A"))));
-            ClearCollect(fileList,'Documente INDICATORI') ; 
+            ClearCollect(fileList,Aplicatii) ; 
             Navigate(Ecran_Catalog)
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
