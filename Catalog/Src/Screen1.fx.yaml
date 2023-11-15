@@ -1,29 +1,11 @@
 Screen1 As screen:
-    BackgroundImage: =Picture1
+    BackgroundImage: ='fundal prima poza'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
-    Image2 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =320
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =Picture9_1
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =320
-        X: =161
-        Y: =292
-        ZIndex: =1
-
     Icon3 As icon.Search:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(171, 136, 90, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -44,43 +26,6 @@ Screen1 As screen:
         Y: =1011
         ZIndex: =2
 
-    "'Logo ursus' As image":
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =240
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='logo 2'
-        ImagePosition: =ImagePosition.Center
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =638
-        X: =2
-        Y: =354
-        ZIndex: =3
-
-    Image3 As image:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =
-        DisabledFill: =RGBA(255, 255, 255, 1)
-        FocusedBorderThickness: =4
-        Height: =177
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =Picture4
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =178
-        X: =80
-        Y: =856
-        ZIndex: =4
-
     Image1 As image:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
@@ -88,14 +33,31 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =194
+        Height: =293
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =Picture1_1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =210
-        X: =430
-        Y: =6
+        Width: =357
+        X: =282
         ZIndex: =5
+
+    Image2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =186
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =urs_1
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =477
+        X: =81
+        Y: =615
+        ZIndex: =6
 
