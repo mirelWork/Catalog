@@ -1,5 +1,5 @@
 Screen1 As screen:
-    BackgroundImage: ='fundal prima poza'
+    BackgroundImage: ='fundal final catalog'
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
@@ -52,14 +52,70 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
-        Height: =186
+        Height: =84
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
         Image: =urs_1
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =477
-        X: =72
-        Y: =616
+        Width: =217
+        X: =212
+        Y: =452
         ZIndex: =6
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =221
+        Size: =50
+        Text: |-
+            ="Catalog Asseturi
+            "
+        Width: =523
+        X: =59
+        Y: =268
+        ZIndex: =7
+
+    Label7 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =58
+        Size: =20
+        Text: ="Sales Development"
+        Width: =254
+        X: =16
+        Y: =1026
+        ZIndex: =8
+
+    Label8 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        Size: =15
+        Text: ="Create by"
+        Width: =98
+        X: =16
+        Y: =984
+        ZIndex: =9
 

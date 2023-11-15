@@ -203,7 +203,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Category_DataCard1",
       "ParentIndex": 2,
@@ -327,14 +327,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "ZIndex"
       ],
       "HasDynamicProperties": false,
@@ -344,7 +337,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Code_DataCard1",
       "ParentIndex": 1,
@@ -452,14 +445,7 @@
         "Align",
         "VerticalAlign",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -487,14 +473,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough"
@@ -506,10 +485,10 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -754,14 +733,7 @@
         "Align",
         "VerticalAlign",
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "10 + (DataCardValue2.Height / 2) - (Self.Height / 2)",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -770,14 +742,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "25",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "ZIndex",
         "AutoHeight",
@@ -789,14 +754,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough"
@@ -808,10 +766,10 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1057,14 +1015,7 @@
         "VerticalAlign",
         "X",
         "Y",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "(Parent.Width - 60) * 0.4",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
         "Height",
         "DisplayMode",
         "ZIndex",
@@ -1077,14 +1028,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough"
@@ -1096,7 +1040,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey3",
       "ParentIndex": 0,
@@ -1668,26 +1612,12 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
         "AutoHeight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "PaddingTop",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "PaddingTop",
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft"
@@ -1699,10 +1629,10 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1948,14 +1878,7 @@
         "Font",
         "FontWeight",
         "Align",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "VerticalAlign",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "VerticalAlign",
         "X",
         {
           "AFDDataSourceName": "",
@@ -1985,34 +1908,13 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
         "AutoHeight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "PaddingTop",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "PaddingRight",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "PaddingTop",
+        "PaddingRight",
         "PaddingBottom",
         "PaddingLeft"
       ],
@@ -2023,10 +1925,10 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2281,14 +2183,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -2305,7 +2200,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue3",
       "ParentIndex": 1,
@@ -2807,15 +2702,7 @@
         "Size",
         "Orientation",
         "LoadingSpinner",
-        "LoadingSpinnerColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "OnVisible",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "LoadingSpinnerColor"
       ],
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -2867,11 +2754,6 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnVisible",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -2937,7 +2819,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": true,
-      "LayoutName": "horizontal",
+      "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EnglishName_DataCard1",
       "ParentIndex": 0,
@@ -3056,7 +2938,7 @@
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
       "IsLocked": false,
-      "LayoutName": "horizontal",
+      "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "FormViewer1",
       "ParentIndex": 2,
@@ -3181,14 +3063,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
@@ -3477,14 +3352,7 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "21",
-          "InvariantPropertyName": "Size",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Size",
         "Italic",
         "Underline",
         "Strikethrough",
