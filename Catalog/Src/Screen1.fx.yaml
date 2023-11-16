@@ -1,5 +1,5 @@
 Screen1 As screen:
-    BackgroundImage: ='fundal final catalog'
+    BackgroundImage: =f5
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
@@ -113,8 +113,8 @@ Screen1 As screen:
         Font: =Font.'Segoe UI'
         Height: =70
         Size: =15
-        Text: ="Create by"
-        Width: =98
+        Text: ="Created by"
+        Width: =106
         X: =16
         Y: =984
         ZIndex: =9
