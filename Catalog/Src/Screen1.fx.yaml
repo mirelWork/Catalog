@@ -79,8 +79,8 @@ Screen1 As screen:
         Text: |-
             ="Catalog Asseturi
             "
-        Width: =523
-        X: =59
+        Width: =635
+        X: =4
         Y: =268
         ZIndex: =7
 
@@ -97,7 +97,7 @@ Screen1 As screen:
         Height: =58
         Size: =20
         Text: ="Sales Development"
-        Width: =254
+        Width: =413
         X: =16
         Y: =1026
         ZIndex: =8
@@ -114,7 +114,7 @@ Screen1 As screen:
         Height: =70
         Size: =15
         Text: ="Created by"
-        Width: =106
+        Width: =211
         X: =16
         Y: =984
         ZIndex: =9
