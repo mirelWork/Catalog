@@ -19,23 +19,9 @@
     ],
     "dependencies": {},
     "dependents": [
-      "6ab2d09e-098f-4392-962d-3173fdb85a84"
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
     ],
     "id": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
-  },
-  "5426a4ed-687a-41ca-bc91-c05e135d4812": {
-    "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "6ab2d09e-098f-4392-962d-3173fdb85a84"
-    ],
-    "id": "5426a4ed-687a-41ca-bc91-c05e135d4812"
   },
   "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
     "appActions": [
@@ -79,40 +65,22 @@
     ],
     "dependencies": {},
     "dependents": [
-      "6ab2d09e-098f-4392-962d-3173fdb85a84"
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
     ],
     "id": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
   },
-  "6ab2d09e-098f-4392-962d-3173fdb85a84": {
+  "c06bcdd1-9131-4940-9f90-3435a1dbc330": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
-          "value": "shared_sharepointonline"
-        },
-        "5426a4ed-687a-41ca-bc91-c05e135d4812": {
-          "value": "shared_office365"
-        },
-        "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
-          "value": "shared_excelonlinebusiness"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
         }
       },
       "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
-        },
-        "shared_office365": {
-          "value": "5426a4ed-687a-41ca-bc91-c05e135d4812"
-        },
-        "shared_sharepointonline": {
-          "value": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "c3cd4aaa-7357-4a8a-8ba0-bc6e852e8674"
@@ -125,10 +93,24 @@
     ],
     "dependencies": {
       "shared_excelonlinebusiness": "5d7fdb37-ae06-476c-b42d-42031ce252bd",
-      "shared_office365": "5426a4ed-687a-41ca-bc91-c05e135d4812",
+      "shared_office365": "db9bfe4e-b17d-4592-8519-a2e5a81af1f3",
       "shared_sharepointonline": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
     },
     "dependents": [],
-    "id": "6ab2d09e-098f-4392-962d-3173fdb85a84"
+    "id": "c06bcdd1-9131-4940-9f90-3435a1dbc330"
+  },
+  "db9bfe4e-b17d-4592-8519-a2e5a81af1f3": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
+    ],
+    "id": "db9bfe4e-b17d-4592-8519-a2e5a81af1f3"
   }
 }
