@@ -302,6 +302,7 @@ Ecran_Catalog As screen:
 
         Label6 As label:
             Align: =Align.Center
+            AutoHeight: =true
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -315,11 +316,11 @@ Ecran_Catalog As screen:
             Italic: =true
             OnSelect: =Select(Parent)
             Size: =18
-            Text: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),"","Fii parte din proiect!                  Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material.                 Multumim!")
+            Text: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),"","Fii parte din proiect! Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material. Multumim!")
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),false,true)
             Width: =390
             X: =165
-            Y: =22
+            Y: =34
             ZIndex: =12
 
     Label1 As label:
