@@ -2,6 +2,19 @@ Ecran_Catalog As screen:
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: =
 
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderThickness: =4
+        Height: =268
+        HoverFill: =RGBA(164, 38, 44, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Width: =640
+        ZIndex: =1
+
     Drop_Categorie As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -60,7 +73,7 @@ Ecran_Catalog As screen:
         Width: =Parent.Width*0.42
         X: =23
         Y: =56
-        ZIndex: =1
+        ZIndex: =2
 
     Drop_Brand As dropdown:
         AllowEmptySelection: =true
@@ -118,7 +131,7 @@ Ecran_Catalog As screen:
         Width: =Parent.Width*0.42
         X: =333
         Y: =56
-        ZIndex: =2
+        ZIndex: =3
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -144,7 +157,7 @@ Ecran_Catalog As screen:
         TemplatePadding: =0
         TemplateSize: =246
         Y: =276
-        ZIndex: =3
+        ZIndex: =4
 
         Title2 As label:
             Color: =RGBA(50, 49, 48, 1)
@@ -313,7 +326,7 @@ Ecran_Catalog As screen:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -326,13 +339,13 @@ Ecran_Catalog As screen:
         Width: =284
         X: =23
         Y: =10
-        ZIndex: =4
+        ZIndex: =5
 
     Label1_1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -344,7 +357,7 @@ Ecran_Catalog As screen:
         Width: =277
         X: =333
         Y: =10
-        ZIndex: =5
+        ZIndex: =6
 
     Rectangle3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -358,7 +371,7 @@ Ecran_Catalog As screen:
         PressedFill: =RGBA(164, 38, 44, 1)
         Width: =640
         Y: =268
-        ZIndex: =6
+        ZIndex: =7
 
     AssetType As dropdown:
         AllowEmptySelection: =true
@@ -416,13 +429,13 @@ Ecran_Catalog As screen:
         Width: =Parent.Width*0.42
         X: =23
         Y: =135
-        ZIndex: =7
+        ZIndex: =8
 
     Label1_2 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -435,7 +448,7 @@ Ecran_Catalog As screen:
         Width: =284
         X: =23
         Y: =98
-        ZIndex: =8
+        ZIndex: =9
 
     Label4 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -453,13 +466,13 @@ Ecran_Catalog As screen:
         Width: =547
         X: =23
         Y: =230
-        ZIndex: =9
+        ZIndex: =10
 
     Label1_3 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FocusedBorderThickness: =4
@@ -472,7 +485,7 @@ Ecran_Catalog As screen:
         Width: =277
         X: =333
         Y: =98
-        ZIndex: =10
+        ZIndex: =11
 
     TextInput1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -503,7 +516,7 @@ Ecran_Catalog As screen:
         Width: =Parent.Width*0.42
         X: =333
         Y: =135
-        ZIndex: =11
+        ZIndex: =12
 
     TextInput1_1 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -532,11 +545,11 @@ Ecran_Catalog As screen:
         Width: =449
         X: =23
         Y: =186
-        ZIndex: =12
+        ZIndex: =13
 
     Icon5 As icon.Cancel:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(164, 38, 44, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -552,11 +565,11 @@ Ecran_Catalog As screen:
         Width: =18
         X: =610
         Y: =206
-        ZIndex: =13
+        ZIndex: =14
 
     Icon1 As icon.FilterFlat:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(164, 38, 44, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -574,5 +587,5 @@ Ecran_Catalog As screen:
         Width: =47
         X: =581
         Y: =186
-        ZIndex: =14
+        ZIndex: =15
 
