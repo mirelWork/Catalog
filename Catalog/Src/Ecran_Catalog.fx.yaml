@@ -305,7 +305,7 @@ Ecran_Catalog As screen:
             Text: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),"","Fii parte din proiect!                  Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material.                 Multumim!")
             Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),false,true)
             Width: =390
-            X: =126
+            X: =165
             Y: =22
             ZIndex: =12
 
