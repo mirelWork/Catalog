@@ -235,6 +235,7 @@ Ecran_Catalog As screen:
                 <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=175 />
                 </center>"
             OnSelect: =Refresh(Aplicatii)
+            Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
             Width: =338
             X: =191
             Y: =8
@@ -285,6 +286,28 @@ Ecran_Catalog As screen:
             X: =24
             Y: =77
             ZIndex: =11
+
+        Label6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(168, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =181
+            Italic: =true
+            OnSelect: =Select(Parent)
+            Size: =18
+            Text: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),"","Fii parte din proiect!                  Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material.                 Multumim!")
+            Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),false,true)
+            Width: =390
+            X: =126
+            Y: =22
+            ZIndex: =12
 
     Label1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)
