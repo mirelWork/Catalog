@@ -156,7 +156,7 @@ Ecran_Catalog As screen:
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =246
-        Transition: =Transition.Pop
+        Transition: =Transition.Push
         Y: =276
         ZIndex: =4
 
