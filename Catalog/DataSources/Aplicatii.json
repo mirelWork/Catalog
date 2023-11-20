@@ -33,6 +33,7 @@
       "MediaServiceImageTags": "Etichete imagine",
       "MediaServiceImageTags#WssId": "Etichete imagine WssId",
       "MediaServiceImageTags@odata.type": "MediaServiceImageTags (MediaServiceImageTags@odata.type)",
+      "MediaServiceOCR": "Extracted Text",
       "Modified": "Modificat",
       "OData__ColorTag": "Etichetă de culoare",
       "OData__DisplayName": "Confidențialitate",
