@@ -3932,7 +3932,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DisplayMode.Edit",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "DisplayMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -4223,7 +4223,14 @@
         "TemplateSize",
         "TemplatePadding",
         "Layout",
-        "Transition",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Transition",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -4234,7 +4241,14 @@
         },
         "LoadingSpinner",
         "LoadingSpinnerColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderColor",
         "DisabledBorderColor",
         "PressedBorderColor",

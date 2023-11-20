@@ -135,6 +135,7 @@ Ecran_Catalog As screen:
 
     "ListaMateriale As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
         Height: =860
         Items: |-
             =IfError(SortByColumns(
@@ -156,6 +157,7 @@ Ecran_Catalog As screen:
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =246
+        Transition: =Transition.Pop
         Y: =276
         ZIndex: =4
 
