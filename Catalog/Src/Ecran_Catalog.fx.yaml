@@ -537,7 +537,8 @@ Ecran_Catalog As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        HintText: =""
+        HintText: |-
+            ="Cauta denumirea ex: table/scaun"
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
