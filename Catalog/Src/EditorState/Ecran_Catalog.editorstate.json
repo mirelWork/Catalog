@@ -2087,7 +2087,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "DisabledColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "DisabledColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "PressedColor",
         "HoverColor",
         "Fill",

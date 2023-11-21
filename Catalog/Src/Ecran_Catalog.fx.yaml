@@ -600,9 +600,9 @@ Ecran_Catalog As screen:
 
     Icon6 As icon.Search:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(164, 38, 44, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledColor: =RGBA(164, 38, 44, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =4
         Height: =40
@@ -614,7 +614,7 @@ Ecran_Catalog As screen:
         PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =36
-        X: =480
+        X: =432
         Y: =186
         ZIndex: =16
 
