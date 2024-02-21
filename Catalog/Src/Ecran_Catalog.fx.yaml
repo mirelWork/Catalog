@@ -542,7 +542,7 @@ Ecran_Catalog As screen:
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        MaxLength: =6
+        MaxLength: =20
         OnChange: =Set(varName,TextInput1_1.Text)
         PressedBorderColor: =RGBA(164, 38, 44, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
