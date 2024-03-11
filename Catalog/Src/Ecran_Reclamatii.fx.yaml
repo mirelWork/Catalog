@@ -90,7 +90,7 @@ Ecran_Reclamatii As screen:
                 User().FullName,
                 base64Data,
                 TextInput2.Text
-            ) And Reset(AddMediaButton1_1) And Navigate(Success)
+            ) And Reset(AddMediaButton1_1) And Reset(TextInput2) And Navigate(Success)
         PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
