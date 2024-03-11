@@ -47,7 +47,8 @@ Ecran_AdaugarePoza As screen:
             PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            Size: =18
+            Size: =24
+            Text: ="Apasa pentru a adăuga o imagine"
             Width: =640
             Y: =713
             ZIndex: =2

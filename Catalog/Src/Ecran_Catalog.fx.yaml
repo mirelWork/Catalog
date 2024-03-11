@@ -330,34 +330,52 @@ Ecran_Catalog As screen:
             Y: =34
             ZIndex: =12
 
-        Button1 As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 185, 20, 1)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =53
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
-            OnSelect: |-
-                =Navigate(Ecran_Reclamatii,Transition.None,{varAdaugarePoza:ThisItem.Code,base64Data:Blank(),imageData:Blank()})
-            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =20
-            Text: ="RECLAMATII"
-            Width: =166
-            X: =11
-            Y: =128
-            ZIndex: =13
+        Group1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =16
+
+            Icon8 As icon.Warning:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(255, 191, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Warning
+                OnSelect: |-
+                    =Navigate(Ecran_Reclamatii,Transition.None,{varAdaugarePoza:ThisItem.Code,base64Data:Blank(),imageData:Blank()})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                X: =52
+                Y: =114
+                ZIndex: =14
+
+            Label10 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 191, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                OnSelect: |-
+                    =Navigate(Ecran_Reclamatii,Transition.None,{varAdaugarePoza:ThisItem.Code,base64Data:Blank(),imageData:Blank()})
+                Size: =16
+                Text: ="Reclamatie"
+                Width: =141
+                X: =24
+                Y: =170
+                ZIndex: =15
 
     Label1 As label:
         BorderColor: =RGBA(0, 0, 0, 0)

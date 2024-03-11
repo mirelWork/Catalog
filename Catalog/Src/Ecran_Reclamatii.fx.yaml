@@ -15,7 +15,7 @@ Ecran_Reclamatii As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =425
+            Height: =570
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =If(IsBlank(AddMediaButton1_1.Media), Blank(), AddMediaButton1_1.Media)
@@ -23,7 +23,7 @@ Ecran_Reclamatii As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =640
-            Y: =64
+            Y: =95
             ZIndex: =1
 
         AddMediaButton1_1 As addMedia:
@@ -37,7 +37,7 @@ Ecran_Reclamatii As screen:
             Fill: =RGBA(186, 202, 226, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =44
+            Height: =64
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
@@ -46,9 +46,10 @@ Ecran_Reclamatii As screen:
             PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            Size: =18
+            Size: =24
+            Text: ="Apasa pentru a adauga o imagine"
             Width: =640
-            Y: =489
+            Y: =665
             ZIndex: =3
 
     Button2_1 As button:
@@ -99,10 +100,10 @@ Ecran_Reclamatii As screen:
         RadiusTopRight: =0
         Size: =24
         Text: ="Incarca Poza"
-        Visible: =Not(IsBlank(UploadedImage1_1.Image))
+        Visible: =And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text))
         Width: =280
         X: =180
-        Y: =861
+        Y: =1032
         ZIndex: =4
 
     Arrow1_2 As arrow.backArrow:
@@ -110,7 +111,7 @@ Ecran_Reclamatii As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(164, 38, 44, 1)
         Height: =60
-        OnSelect: =Navigate(Ecran_Catalog)
+        OnSelect: =Navigate(Ecran_Catalog) And Reset(TextInput2) And Reset(AddMediaButton1_1)
         Width: =60
         X: =15
         Y: =10
@@ -120,15 +121,16 @@ Ecran_Reclamatii As screen:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
-        Default: |-
-            ="Adauga aici reclamatia ta.
-            Multumim!"
+        Default: =""
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Height: =216
+        HintText: |-
+            ="Adauga aici reclamatia ta.
+            Multumim!"
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
@@ -140,9 +142,10 @@ Ecran_Reclamatii As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
+        Reset: =true
         Size: =21
         Width: =560
         X: =40
-        Y: =614
+        Y: =762
         ZIndex: =6
 
