@@ -57,6 +57,7 @@ Ecran_Reclamatii As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text)),DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =RGBA(164, 38, 44, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
@@ -100,7 +101,7 @@ Ecran_Reclamatii As screen:
         RadiusTopRight: =0
         Size: =24
         Text: ="Incarca Poza"
-        Visible: =And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text))
+        Tooltip: ="Adauga poza si mesajul reclamatiei."
         Width: =280
         X: =180
         Y: =1032
