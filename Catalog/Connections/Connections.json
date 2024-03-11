@@ -1,4 +1,58 @@
 {
+  "0b1983cc-e278-4893-bd2e-02c776c254d8": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
+          "value": "shared_sharepointonline"
+        },
+        "5d7fdb37-ae06-476c-b42d-42031ce252bd": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "db9bfe4e-b17d-4592-8519-a2e5a81af1f3": {
+          "value": "shared_office365"
+        },
+        "workflowDisplayName": {
+          "value": "Salvare Reclamatie"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3e9ac334-4f48-4123-b0f2-fe205635d20b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
+        },
+        "shared_office365": {
+          "value": "db9bfe4e-b17d-4592-8519-a2e5a81af1f3"
+        },
+        "shared_sharepointonline": {
+          "value": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+        },
+        "workflowDisplayName": {
+          "value": "Salvare Reclamatie"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3e9ac334-4f48-4123-b0f2-fe205635d20b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SalvareReclamatie"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "5d7fdb37-ae06-476c-b42d-42031ce252bd",
+      "shared_office365": "db9bfe4e-b17d-4592-8519-a2e5a81af1f3",
+      "shared_sharepointonline": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
+    },
+    "dependents": [],
+    "id": "0b1983cc-e278-4893-bd2e-02c776c254d8"
+  },
   "0f84ed25-278c-4720-952d-7b5557a5d6ef": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -19,7 +73,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330",
+      "0b1983cc-e278-4893-bd2e-02c776c254d8"
     ],
     "id": "0f84ed25-278c-4720-952d-7b5557a5d6ef"
   },
@@ -65,7 +120,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330",
+      "0b1983cc-e278-4893-bd2e-02c776c254d8"
     ],
     "id": "5d7fdb37-ae06-476c-b42d-42031ce252bd"
   },
@@ -127,7 +183,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "c06bcdd1-9131-4940-9f90-3435a1dbc330"
+      "c06bcdd1-9131-4940-9f90-3435a1dbc330",
+      "0b1983cc-e278-4893-bd2e-02c776c254d8"
     ],
     "id": "db9bfe4e-b17d-4592-8519-a2e5a81af1f3"
   }

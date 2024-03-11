@@ -343,7 +343,8 @@ Ecran_Catalog As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Navigate(Ecran_Reclamatii,Transition.None,{varAdaugarePoza:ThisItem.Code,base64Data:Blank(),imageData:Blank()})
             PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
