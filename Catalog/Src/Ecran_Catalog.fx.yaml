@@ -177,7 +177,7 @@ Ecran_Catalog As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =167
             X: =24
-            Y: =30
+            Y: =8
             ZIndex: =2
 
         Subtitle2 As label:
@@ -302,8 +302,8 @@ Ecran_Catalog As screen:
             Visible: |-
                 =Len(Label3.Text)>Len("Materiale similare: ")
             Width: =167
-            X: =24
-            Y: =77
+            X: =14
+            Y: =50
             ZIndex: =11
 
         Label6 As label:
