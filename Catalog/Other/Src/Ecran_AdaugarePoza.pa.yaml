@@ -1,0 +1,123 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Ecran_AdaugarePoza:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    Children:
+      - UploadedImage1:
+          Control: Image@2.2.3
+          Group: AddMediaWithImage1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =649
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =If(IsBlank(AddMediaButton1.Media), Blank(), AddMediaButton1.Media)
+            OnSelect: =Button2.Visible=true
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =640
+            Y: =64
+      - AddMediaButton1:
+          Control: AddMedia@2.2.1
+          Group: AddMediaWithImage1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            ChangePictureText: ="Selecteaza Poza"
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(186, 202, 226, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =67
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+            OnChange: =Button2.Visible=true
+            OnSelect: =Button2.Visible=true
+            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            Size: =24
+            Text: ="Apasa pentru a adăuga o imagine"
+            Width: =640
+            Y: =713
+      - Button2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =If(And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text)),DisplayMode.Edit,DisplayMode.Disabled)
+            Fill: =RGBA(164, 38, 44, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =50
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+            OnSelect: |-
+              =UpdateContext(
+                  {
+                      imageData: Last(
+                          Split(
+                              JSON(
+                                  UploadedImage1.Image,
+                                  JSONFormat.IncludeBinaryData
+                              ),
+                              ","
+                          )
+                      ).Value
+                  }
+              ) And UpdateContext(
+                  {
+                      base64Data: Left(
+                          imageData,
+                          Len(imageData) - 1
+                      )
+                  }
+              ) And Salvarepoza.Run(
+                  varAdaugarePoza,
+                  User().FullName,
+                  base64Data
+              ) And Reset(AddMediaButton1) And Navigate(Success)
+            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Incarca Poza"
+            Tooltip: ="Adauga poza"
+            X: =180
+            Y: =876
+      - Arrow1:
+          Control: Arrow@2.3.0
+          Variant: BackArrow
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =60
+            OnSelect: =Navigate(Ecran_Catalog)
+            Width: =60
+            X: =15
+            Y: =10

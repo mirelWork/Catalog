@@ -1,0 +1,247 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Ecran_Zoom:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+      OnVisible: =UpdateContext({fontSize:18})
+    Children:
+      - PozeMarita:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =672
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =marire
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =640
+            Y: =68
+      - Arrow1_1:
+          Control: Arrow@2.3.0
+          Variant: BackArrow
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(164, 38, 44, 1)
+            Height: =41
+            OnSelect: =Navigate(Ecran_Catalog)
+            Width: =41
+            X: =15
+            Y: =10
+      - FormViewer1:
+          Control: FormViewer@2.3.4
+          Layout: Vertical
+          Properties:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DataSource: =Catalog
+            Height: =263
+            Item: =varSelectedItem
+            Y: =740
+          Children:
+            - EnglishName_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(166, 166, 166, 1)
+                  DataField: ="EnglishName"
+                  Default: =ThisItem.EnglishName
+                  DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,EnglishName)
+                  Required: =false
+                  X: =0
+                  Y: =0
+                Children:
+                  - DataCardKey3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =40
+                        PaddingLeft: =0
+                        Size: =fontSize
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.35
+                        Wrap: =false
+                        X: =30
+                  - DataCardValue3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldValue
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =30
+                        PaddingLeft: =0
+                        Size: =fontSize-3
+                        Text: =Parent.Default
+                        Width: =(Parent.Width - 60) * 0.69
+                        X: =DataCardKey3.X + DataCardKey3.Width
+            - Code_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(166, 166, 166, 1)
+                  DataField: ="Code"
+                  Default: =ThisItem.Code
+                  DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,Code)
+                  Height: =30
+                  Required: =false
+                  X: =0
+                  Y: =1
+                Children:
+                  - DataCardKey2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =42
+                        PaddingLeft: =0
+                        Size: =fontSize
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.35
+                        Wrap: =false
+                        X: =30
+                        Y: |
+                          =0
+                  - DataCardValue2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldValue
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: |
+                          =30
+                        PaddingLeft: =0
+                        Size: =fontSize
+                        Text: =Parent.Default
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey2.X + DataCardKey2.Width
+            - Material Category_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(166, 166, 166, 1)
+                  DataField: ="Material Category"
+                  Default: =ThisItem.'Material Category'
+                  DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,'Material Category')
+                  Required: =false
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardKey4:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =48
+                        PaddingLeft: =0
+                        Size: =fontSize
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.35
+                        Wrap: =false
+                        X: =30
+                  - DataCardValue4:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldValue
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        Color: =RGBA(51, 51, 51, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisplayMode: =Parent.DisplayMode
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        Height: =40
+                        PaddingLeft: =0
+                        Size: =fontSize
+                        Text: =Parent.Default
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey4.X + DataCardKey4.Width
+      - Label2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =37
+            Size: =fontSize
+            Text: =Concat(ForAll( Filter(catalogList, Not(IsBlank(Asociate)),Asociate=varSelectedItem.Asociate,Code<>varSelectedItem.Code),Code),Value,", ")
+            Width: =625
+            X: =15
+            Y: =1051
+      - Label2_1:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =fontSize
+            Text: ="Materiale Asociate:"
+            Visible: =!IsBlank(Label2.Text)
+            Width: =300
+            X: =15
+            Y: =1003

@@ -1,0 +1,84 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Success:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+      OnHidden: =Timer1.Reset=true
+      OnVisible: =Timer1.Start=true
+    Children:
+      - iconCircle2:
+          Control: Circle@2.3.0
+          Properties:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(164, 38, 44, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            HoverFill: =RGBA(164, 38, 44, 1)
+            PressedFill: =RGBA(164, 38, 44, 1)
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =(Parent.Height/2 - Self.Height/2) * .7
+      - iconCheck2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            Height: =iconCircle2.Height
+            Icon: =Icon.Check
+            PaddingBottom: =Self.PaddingTop
+            PaddingLeft: =Self.PaddingTop
+            PaddingRight: =Self.PaddingTop
+            PaddingTop: =18
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =iconCircle2.Width
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =(Parent.Height/2 - Self.Height/2) * .7
+      - LblSuccessMsg2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            AutoHeight: =true
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =iconCircle2.Height
+            Text: ="Incarcarea pozei s-a finalizat cu succes"
+            Width: =Parent.Width * 0.75
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =iconCheck2.Y + iconCheck2.Height + 100
+      - Timer1:
+          Control: Timer@2.1.0
+          Properties:
+            AutoStart: =true
+            BorderColor: =RGBA(164, 38, 44, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            Duration: =3000
+            Fill: =RGBA(164, 38, 44, 1)
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+            OnTimerEnd: =Navigate(Ecran_Catalog)
+            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            Size: =21
+            Visible: =false
+            X: =180
+            Y: =43

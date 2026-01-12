@@ -95,7 +95,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "formViewer",
     "OverridableProperties": {},
-    "Version": "2.3.2"
+    "Version": "2.3.4"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -109,7 +109,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "gallery",
     "OverridableProperties": {},
-    "Version": "2.14.1"
+    "Version": "2.15.0"
   },
   "galleryTemplate": {
     "CustomGroupControlTemplateName": "",
@@ -288,6 +288,6 @@
     "LastModifiedTimestamp": "0",
     "Name": "typedDataCard",
     "OverridableProperties": {},
-    "Version": "1.0.6"
+    "Version": "1.0.7"
   }
 }

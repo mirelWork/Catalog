@@ -47,7 +47,7 @@
             DataField: ="EnglishName"
             Default: =ThisItem.EnglishName
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"EnglishName")
+            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,EnglishName)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -100,7 +100,7 @@
             DataField: ="Code"
             Default: =ThisItem.Code
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"Code")
+            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,Code)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false
@@ -156,7 +156,7 @@
             DataField: ="Material Category"
             Default: =ThisItem.'Material Category'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,"Material Category")
+            DisplayName: =DataSourceInfo([@Catalog],DataSourceInfo.DisplayName,'Material Category')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
