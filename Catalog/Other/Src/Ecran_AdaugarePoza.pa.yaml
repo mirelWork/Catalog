@@ -65,7 +65,7 @@ Screens:
             BorderColor: =RGBA(0, 0, 0, 0)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisplayMode: =If(And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text)),DisplayMode.Edit,DisplayMode.Disabled)
+            DisplayMode: =If(!IsBlank(UploadedImage1.Image),DisplayMode.Edit,DisplayMode.Disabled)
             Fill: =RGBA(164, 38, 44, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'

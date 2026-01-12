@@ -58,7 +58,7 @@ Ecran_AdaugarePoza As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayMode: =If(And(!IsBlank(UploadedImage1_1.Image),!IsBlank(TextInput2.Text)),DisplayMode.Edit,DisplayMode.Disabled)
+        DisplayMode: =If(!IsBlank(UploadedImage1.Image),DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =RGBA(164, 38, 44, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'

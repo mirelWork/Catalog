@@ -236,7 +236,7 @@ Screens:
                 Control: Classic/Icon@2.5.0
                 Properties:
                   BorderColor: =RGBA(166, 166, 166, 1)
-                  Color: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code),ColorFade(RGBA(0, 188, 242, 1), 30%),RGBA(255, 0, 10, 100))
+                  Color: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),ColorFade(RGBA(0, 188, 242, 1), 30%),RGBA(255, 0, 10, 100))
                   DisabledBorderColor: =RGBA(0, 0, 0, 0)
                   DisabledColor: =RGBA(220, 220, 220, 1)
                   DisabledFill: =RGBA(0, 0, 0, 0)
@@ -263,11 +263,11 @@ Screens:
                   Height: =195
                   HtmlText: |
                     ="<center>
-                    <img src="&First(Filter(fileList,ThisRecord.Name=ThisItem.Code)).Thumbnail.Large&" height=175 />
+                    <img src="&First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large&" height=175 />
                     </center>"
                   OnSelect: =Refresh(Aplicatii)
                   Size: =24
-                  Visible: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code),true,false)
+                  Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
                   Width: =338
                   X: =191
                   Y: =8
@@ -285,12 +285,12 @@ Screens:
                   HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
                   HoverFill: =RGBA(0, 0, 0, 0)
                   Icon: =Icon.ExpandView
-                  OnSelect: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code), Navigate(Ecran_Zoom,Transition.None,{marire:First(Filter(fileList,ThisRecord.Name=ThisItem.Code)).Thumbnail.Large,varSelectedItem:ThisItem}),false)
+                  OnSelect: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code), Navigate(Ecran_Zoom,Transition.None,{marire:First(Filter(fileList,ThisRecord.Nume=ThisItem.Code)).Thumbnail.Large,varSelectedItem:ThisItem}),false)
                   PressedBorderColor: =RGBA(0, 0, 0, 0)
                   PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
                   PressedFill: =RGBA(0, 0, 0, 0)
                   Tooltip: ="Mareste poza"
-                  Visible: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code),true,false)
+                  Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),true,false)
                   Width: =36
                   X: =493
                   Y: =165
@@ -334,8 +334,8 @@ Screens:
                   Italic: =true
                   OnSelect: =Select(Parent)
                   Size: =18
-                  Text: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code),"","Fii parte din proiect! Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material. Multumim!")
-                  Visible: =If(LookUp(fileList,Name=ThisItem.Code,Name=ThisItem.Code),false,true)
+                  Text: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),"","Fii parte din proiect! Ajuta-ti colegii prin incarcarea unei poze relevante pentru acest cod de material. Multumim!")
+                  Visible: =If(LookUp(fileList,Nume=ThisItem.Code,Nume=ThisItem.Code),false,true)
                   Width: =390
                   X: =165
                   Y: =34
