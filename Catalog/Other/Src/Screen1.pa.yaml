@@ -9,7 +9,7 @@
 Screens:
   Screen1:
     Properties:
-      BackgroundImage: =f5
+      BackgroundImage: =fundal
       Fill: =RGBA(148, 34, 40, 1)
       ImagePosition: =ImagePosition.Fill
       LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
@@ -51,7 +51,7 @@ Screens:
             Height: =293
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =
+            Image: =Picture1_1
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =357
